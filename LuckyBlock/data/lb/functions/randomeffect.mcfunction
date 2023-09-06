@@ -5,17 +5,18 @@ function lb:rand
 scoreboard players operation level RANDOM = @s RANDOM
 
 
-execute if score level RANDOM matches 1 run summon minecraft:pig ~ ~1 ~ {Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig}]}]}]}]}]}]}]}
+execute if score level RANDOM matches 0 run function lb:effects/good/pig
 
-execute if score level RANDOM matches 1 run setblock ~ ~ ~ minecraft:chest{LootTable:"minecraft:chests/bastion_treasure"}
+execute if score level RANDOM matches 1 run function lb:effects/good/chest_treasure
 
-execute if score level RANDOM matches 2 run summon minecraft:zombie ~ ~1 ~ {Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie}]}]}]}]}]}]}]}
+execute if score level RANDOM matches 2 run function lb:effects/bad/zombie_tower
 
-execute if score level RANDOM matches 3 at @s as @p run function lb:createspawnpoint
-execute if score level RANDOM matches 3 run tellraw @p ["",{"text":"[Lucky Block] Vous débloquez un ","color":"gold"},{"text":"checkpoint ","color":"dark_red"},{"text":"supplémentaire à ","color":"gold"},{"text":"cette position","color":"dark_red"}]
+execute if score level RANDOM matches 3 at @s as @p run function lb:effects/good/spawnpoint
 
-execute if score level RANDOM matches 4 at @s as @p run effect give @s levitation 3 1
-execute if score level RANDOM matches 5 run function lb:effects/hole
+execute if score level RANDOM matches 4 at @s as @p run function lb:effects/bad/levitation
+
+execute if score level RANDOM matches 5 run function lb:effects/bad/hole
+
 execute if score level RANDOM matches 6 as @p at @s run tp @s ~ ~ ~ ~180 ~180
 
 execute if score level RANDOM matches 7 as @p at @s run effect give @a[distance=1..] blindness 3 1

@@ -1,0 +1,1 @@
+summon minecraft:zombie ~ ~1 ~ {Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie}]}]}]}]}]}]}]}

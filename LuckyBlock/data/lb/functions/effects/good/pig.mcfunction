@@ -1,0 +1,1 @@
+summon minecraft:pig ~ ~1 ~ {Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig}]}]}]}]}]}]}]}

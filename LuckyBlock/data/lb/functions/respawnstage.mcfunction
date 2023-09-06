@@ -1,11 +1,11 @@
-scoreboard players set max RANDOM 17
+scoreboard players set max RANDOM 29
 function lb:rand
 scoreboard players operation @s randomstage = @s RANDOM
 
 
-execute if score @s randomstage matches 0..4 run scoreboard players set @s weightstagetoadd 1
-execute if score @s randomstage matches 5..10 run scoreboard players set @s weightstagetoadd 2
-execute if score @s randomstage matches 11..16 run scoreboard players set @s weightstagetoadd 3
+execute if score @s randomstage matches 0..10 run scoreboard players set @s weightstagetoadd 1
+execute if score @s randomstage matches 11..20 run scoreboard players set @s weightstagetoadd 2
+execute if score @s randomstage matches 21..28 run scoreboard players set @s weightstagetoadd 3
 
 
 

@@ -3,5 +3,7 @@
 # spawn game -1000 -1000
 # tests : 1000 1000
 
+Jump command block :
+execute as @p[distance=..2] run fill ~ ~ ~17 ~ ~ ~ gravel
 
 03 09 2023 -> remove all default advancements, begin 1.20.1 update, update signs at spawn, begin create new platforms (woods)

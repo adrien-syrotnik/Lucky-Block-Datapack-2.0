@@ -72,8 +72,10 @@ execute as @e[tag=BlueShell,scores={count=1..}] at @s run playsound minecraft:bl
 execute at @e[tag=BlueShell,scores={count=1..}] as @a if score @s currentplayer = BestDistance currentplayer facing entity @s feet run tp @e[tag=BlueShell,scores={count=1..},limit=1,sort=nearest] ~ ~ ~ ~ ~
 execute as @e[tag=BlueShell,scores={count=1..}] at @s run tp @s ^ ^ ^1
 
-execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] unless score BestDistance currentplayer = @p currentplayer run effect give @p instant_damage
+execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] unless score BestDistance currentplayer = @p currentplayer run damage @p 3 cactus by @s
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:4b,CustomName:'{"text":"Carapace Bleue","color":"dark_blue","bold":true}'}
+#Detect if the player touched is near the end, for the success
+execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer as @e[name="NextStage",type=armor_stand,scores={level=4},distance=..10] if score @s currentplayer = @p currentplayer run advancement grant @p only lb:lucky_block/blue_shell_for_the_winner
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run kill @s
 
 kill @e[tag=BlueShell,scores={count=..1}]

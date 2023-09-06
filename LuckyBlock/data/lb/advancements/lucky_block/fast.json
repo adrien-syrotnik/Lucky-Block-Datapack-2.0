@@ -4,7 +4,7 @@
             "item": "minecraft:feather"
         },
         "title": "Speedrun Any% Glitchless",
-        "description": "Finir une partie en dessous des 2 minutes en ayant la configuration 10/10/10/10",
+        "description": "Finish a game under 1 minute with the configuration 5/5/5/5",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "challenge",
         "show_toast": true,

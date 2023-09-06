@@ -17,7 +17,8 @@ scoreboard players set @s ingame 0
 function lb:top/calculatetime
 tellraw @a ["",{"text":"\n"},{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" a atteint l'arrivée en ","color":"gold"},{"score":{"name":"@s","objective":"minutes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"secondes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"centieme"},"color":"gold"}]
 
-execute if score level0weight maxweightstage = 10 number if score level1weight maxweightstage = 10 number if score level2weight maxweightstage = 10 number if score level3weight maxweightstage = 10 number if score @s timerun < 2400 number run advancement grant @s only lb:lucky_block/fast
+#old execute if score level0weight maxweightstage = 10 number if score level1weight maxweightstage = 10 number if score level2weight maxweightstage = 10 number if score level3weight maxweightstage = 10 number if score @s timerun < 2400 number run advancement grant @s only lb:lucky_block/fast
+execute if score level0weight maxweightstage = 5 number if score level1weight maxweightstage = 5 number if score level2weight maxweightstage = 5 number if score level3weight maxweightstage = 5 number if score @s timerun < 1200 number run advancement grant @s only lb:lucky_block/fast
 
 scoreboard players set @e[name=timer] rainbow 6
 
