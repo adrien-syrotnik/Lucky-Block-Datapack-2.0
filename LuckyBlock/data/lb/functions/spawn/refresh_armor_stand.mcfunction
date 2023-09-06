@@ -1,0 +1,7 @@
+execute positioned 5000 99 4989 run kill @e[type=armor_stand,distance=..2]
+
+summon armor_stand 4999 99 4989 {Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:16746496}}},{id:"leather_leggings",Count:1b,tag:{display:{color:16777215}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"player_head",Count:1b,tag:{SkullOwner:"____P_Body"}}],HandItems:[{id:"command_block",Count:1b},{}],CustomName:'{"text":"____P_Body","color":"gold","bold":"true"}',CustomNameVisible:1b,DisabledSlots:0,Pose:{Head:[0f,322f,0f],LeftLeg:[336f,0f,0f],RightLeg:[25f,0f,0f],LeftArm:[37f,0f,0f],RightArm:[319f,0f,0f]}}
+fill 4999 99 4989 4999 100 4989 minecraft:barrier
+
+summon armor_stand 5001 99 4989 {Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ShowArms:1b,ArmorItems:[{id:"leather_boots",Count:1b,tag:{display:{color:22015}}},{id:"leather_leggings",Count:1b,tag:{display:{color:16777215}}},{id:"leather_chestplate",Count:1b,tag:{display:{color:16777215}}},{id:"player_head",Count:1b,tag:{SkullOwner:"____Atlas"}}],HandItems:[{},{id:"grass_block",Count:1b}],CustomName:'{"text":"____Atlas","color":"dark_blue","bold":"true"}',CustomNameVisible:1b,DisabledSlots:0,Pose:{Head:[0f,41f,0f],LeftLeg:[32f,0f,0f],RightLeg:[336f,0f,0f],LeftArm:[322f,0f,0f],RightArm:[51f,0f,0f]}}
+fill 5001 99 4989 5001 100 4989 minecraft:barrier

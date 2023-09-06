@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:water_bucket"
+        },
+        "title": "Au feu les pompiers !",
+        "description": "Get a water after a fire to extinguish the fire!",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "fish + water": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": "Gagner 20 fois",
+        "description": "Win 20 times",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/win1",
+    "criteria": {
+        "fish + water": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

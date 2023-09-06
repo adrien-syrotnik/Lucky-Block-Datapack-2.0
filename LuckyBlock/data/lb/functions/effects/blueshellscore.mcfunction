@@ -1,0 +1,1 @@
+execute if score BestDistance -1 < @p Distance run scoreboard players operation BestDistance -1 = @p Distance

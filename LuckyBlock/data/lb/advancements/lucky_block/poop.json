@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brown_dye"
+        },
+        "title": "It doesn't smell good!",
+        "description": "Get the poop item, a special case...",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "poop": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

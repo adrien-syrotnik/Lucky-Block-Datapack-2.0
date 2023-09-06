@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_ingot"
+        },
+        "title": "Gagner 50 fois",
+        "description": "Win 50 times",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/win2",
+    "criteria": {
+        "fish + water": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

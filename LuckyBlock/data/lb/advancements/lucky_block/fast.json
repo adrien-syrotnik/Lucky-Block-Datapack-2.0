@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:feather"
+        },
+        "title": "Speedrun Any% Glitchless",
+        "description": "Finir une partie en dessous des 2 minutes en ayant la configuration 10/10/10/10",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "fast": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

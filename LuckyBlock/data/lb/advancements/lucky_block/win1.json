@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:copper_ingot"
+        },
+        "title": "Gagner 5 fois",
+        "description": "Win 5 times",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "fish + water": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

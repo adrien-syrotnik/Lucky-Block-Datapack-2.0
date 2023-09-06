@@ -1,0 +1,2 @@
+execute as @e[tag=PlayerHead,type=armor_stand] at @s run data modify entity @e[type=minecraft:armor_stand,limit=1,sort=nearest,distance=..3] ArmorItems[3].tag.SkullOwner set from entity @e[type=minecraft:item,sort=nearest,limit=1,distance=..3] Item.tag.SkullOwner.Name
+execute as @e[tag=PlayerHead,type=armor_stand] at @s run kill @e[type=minecraft:item,sort=nearest,limit=1,distance=..3]
