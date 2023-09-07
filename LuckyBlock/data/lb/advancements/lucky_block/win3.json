@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:gold_ingot"
         },
-        "title": "Gagner 50 fois",
+        "title": "Win 50 times",
         "description": "Win 50 times",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "challenge",

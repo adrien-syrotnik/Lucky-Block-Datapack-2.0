@@ -11,8 +11,7 @@ execute if score level RANDOM matches 5..10 run setblock ~ ~ ~ minecraft:chest{L
 
 execute if score level RANDOM matches 11..14 run summon minecraft:zombie ~ ~1 ~ {Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie,Passengers:[{id:zombie}]}]}]}]}]}]}]}
 
-execute if score level RANDOM matches 15..17 at @s as @p run function lb:createspawnpoint
-execute if score level RANDOM matches 15..17 run tellraw @p ["",{"text":"[Lucky Block] Vous débloquez un ","color":"gold"},{"text":"checkpoint ","color":"dark_red"},{"text":"supplémentaire à ","color":"gold"},{"text":"cette position","color":"dark_red"}]
+execute if score level RANDOM matches 15..17 at @s as @p run function lb:effects/good/spawnpoint
 
 execute if score level RANDOM matches 18..22 at @s as @p run effect give @s levitation 3 1
 

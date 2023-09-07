@@ -1,4 +1,4 @@
-execute as @a at @s if block ~ ~-1 ~ minecraft:sea_lantern if entity @e[tag=Respawn,distance=..3] run scoreboard players set @p checkpoint_valid 1
+execute as @a[gamemode=survival] at @s if block ~ ~-1 ~ minecraft:sea_lantern if entity @e[tag=Respawn,distance=..3] run scoreboard players set @p checkpoint_valid 1
 execute as @a[scores={checkpoint_valid=1}] at @s run effect give @s minecraft:resistance 1 255 true
 execute as @a[scores={checkpoint_valid=1}] at @s at @e[tag=Respawn,distance=..3,limit=1,sort=nearest] run fill ~-2 ~-1 ~-2 ~2 ~ ~2 minecraft:gold_block replace minecraft:white_stained_glass
 execute as @a[scores={checkpoint_valid=1}] at @s at @e[tag=Respawn,distance=..3,limit=1,sort=nearest] run fill ~-2 ~-1 ~-2 ~2 ~ ~2 minecraft:gold_block replace minecraft:sea_lantern

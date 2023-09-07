@@ -4,11 +4,11 @@
 execute if score @s randomstage matches 0..10 at @s run fill ~-3 ~-3 ~-3 ~-3 ~20 ~-7 minecraft:barrier
 execute if score @s randomstage matches 0..10 at @s run fill ~3 ~-3 ~-3 ~3 ~20 ~-7 minecraft:barrier
 
-execute if score @s randomstage matches 11..20 at @s run fill ~-3 ~-3 ~-3 ~-3 ~20 ~-12 minecraft:barrier
-execute if score @s randomstage matches 11..20 at @s run fill ~3 ~-3 ~-3 ~3 ~20 ~-12 minecraft:barrier
+execute if score @s randomstage matches 11..22 at @s run fill ~-3 ~-3 ~-3 ~-3 ~20 ~-12 minecraft:barrier
+execute if score @s randomstage matches 11..22 at @s run fill ~3 ~-3 ~-3 ~3 ~20 ~-12 minecraft:barrier
 
-execute if score @s randomstage matches 21..28 at @s run fill ~-3 ~-3 ~-3 ~-3 ~20 ~-17 minecraft:barrier
-execute if score @s randomstage matches 21..28 at @s run fill ~3 ~-3 ~-3 ~3 ~20 ~-17 minecraft:barrier
+execute if score @s randomstage matches 23..34 at @s run fill ~-3 ~-3 ~-3 ~-3 ~20 ~-17 minecraft:barrier
+execute if score @s randomstage matches 23..34 at @s run fill ~3 ~-3 ~-3 ~3 ~20 ~-17 minecraft:barrier
 
 
 #1ere ligne
@@ -110,58 +110,89 @@ execute if score @s randomstage matches 20 at @s run tp @s ~ ~ ~-10
 execute if score @s randomstage matches 20 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 20 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-
-#3eme ligne
-execute if score @s randomstage matches 21 at @s run clone -8 -1 30 -4 1 16 ~-2 ~-3 ~-17
-execute if score @s randomstage matches 21 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 21 at @s run clone -43 -1 44 -39 5 35 ~-2 ~-3 ~-12
+execute if score @s randomstage matches 21 at @s run tp @s ~ ~ ~-10
 execute if score @s randomstage matches 21 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 21 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 21 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 22 at @s run clone -1 -1 30 3 1 16 ~-2 ~-3 ~-17
-execute if score @s randomstage matches 22 at @s run tp @s ~ ~ ~-15
-execute if score @s randomstage matches 22 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 22 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 22 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 22 at @s run clone -50 -1 44 -46 5 35 ~-2 ~-3 ~-12
+execute if score @s randomstage matches 22 at @s run tp @s ~ ~ ~-10
+execute if score @s randomstage matches 22 at @s run summon armor_stand ~ ~-1 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 22 at @s run summon armor_stand ~ ~-1 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 23 at @s run clone 6 -1 30 10 1 16 ~-2 ~-3 ~-17
+#3eme ligne
+execute if score @s randomstage matches 23 at @s run clone -8 -1 30 -4 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 23 at @s run tp @s ~ ~ ~-15
 execute if score @s randomstage matches 23 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 23 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 23 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 24 at @s run clone 13 -1 30 17 1 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 24 at @s run clone -1 -1 30 3 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 24 at @s run tp @s ~ ~ ~-15
 execute if score @s randomstage matches 24 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 24 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 24 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 25 at @s run clone 20 -1 30 24 1 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 25 at @s run clone 6 -1 30 10 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 25 at @s run tp @s ~ ~ ~-15
-execute if score @s randomstage matches 25 at @s run summon armor_stand ~ ~-2 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 25 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 25 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 25 at @s run summon armor_stand ~ ~-2 ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 25 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 26 at @s run clone 27 -1 30 31 1 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 26 at @s run clone 13 -1 30 17 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 26 at @s run tp @s ~ ~ ~-15
 execute if score @s randomstage matches 26 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 26 at @s run summon armor_stand ~ ~-2 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 26 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 26 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-#New 3eme ligne - WOOD EDITION
-execute if score @s randomstage matches 27 at @s run clone -15 -1 30 -11 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 27 at @s run clone 20 -1 30 24 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 27 at @s run tp @s ~ ~ ~-15
-execute if score @s randomstage matches 27 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 27 at @s run summon armor_stand ~ ~-2 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 27 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 27 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 27 at @s run summon armor_stand ~ ~-2 ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
-execute if score @s randomstage matches 28 at @s run clone -22 -1 30 -18 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 28 at @s run clone 27 -1 30 31 1 16 ~-2 ~-3 ~-17
 execute if score @s randomstage matches 28 at @s run tp @s ~ ~ ~-15
 execute if score @s randomstage matches 28 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
-execute if score @s randomstage matches 28 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 28 at @s run summon armor_stand ~ ~-2 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 execute if score @s randomstage matches 28 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
+#New 3eme ligne - WOOD EDITION
+execute if score @s randomstage matches 29 at @s run clone -15 -1 30 -11 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 29 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 29 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 29 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 29 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
+execute if score @s randomstage matches 30 at @s run clone -22 -1 30 -18 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 30 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 30 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 30 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 30 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+
+execute if score @s randomstage matches 31 at @s run clone -29 -1 30 -25 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 31 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 31 at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 31 at @s run summon armor_stand ~ ~-2 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 31 at @s run summon armor_stand ~ ~ ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+
+execute if score @s randomstage matches 32 at @s run clone -36 -1 30 -32 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 32 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 32 at @s run summon armor_stand ~ ~-2 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 32 at @s run summon armor_stand ~ ~ ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 32 at @s run summon armor_stand ~ ~-2 ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+
+execute if score @s randomstage matches 33 at @s run clone -43 -1 30 -39 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 33 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 33 at @s run summon armor_stand ~ ~1 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 33 at @s run summon armor_stand ~ ~1 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 33 at @s run summon armor_stand ~ ~1 ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+
+execute if score @s randomstage matches 34 at @s run clone -50 -1 30 -46 3 16 ~-2 ~-3 ~-17
+execute if score @s randomstage matches 34 at @s run tp @s ~ ~ ~-15
+execute if score @s randomstage matches 34 at @s run summon armor_stand ~ ~-1 ~ {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 34 at @s run summon armor_stand ~ ~-1 ~5 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
+execute if score @s randomstage matches 34 at @s run summon armor_stand ~ ~-1 ~10 {NoGravity:1b,Small:1b,Marker:1b,Invisible:1b,CustomName:'{"text":"SpawnLB"}'}
 
 scoreboard players operation @s next_score += @s weightstagetoadd
 

@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:iron_ingot"
         },
-        "title": "Gagner 20 fois",
+        "title": "Win 20 times",
         "description": "Win 20 times",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "goal",

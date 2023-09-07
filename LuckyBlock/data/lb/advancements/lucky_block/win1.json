@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:copper_ingot"
         },
-        "title": "Gagner 5 fois",
+        "title": "Win 5 times",
         "description": "Win 5 times",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "task",

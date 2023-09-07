@@ -3,6 +3,7 @@ execute if score ingame ingame matches 1 run function lb:best_distance
 
 function lb:spawn/armor_stand_animation
 
+function lb:levels/abandon
 
 function lb:stage
 function lb:spawnlb

@@ -1,5 +1,5 @@
 #random number generator
-scoreboard players set max RANDOM 13
+scoreboard players set max RANDOM 14
 function lb:rand
 
 fill ~-3 ~-3 ~-3 ~-3 ~20 ~-23 minecraft:barrier
@@ -31,6 +31,8 @@ execute if score @s RANDOM matches 10 run clone -29 -1 11 -25 6 -8 ~-2 ~-3 ~-22
 execute if score @s RANDOM matches 11 run clone -36 -1 11 -32 6 -8 ~-2 ~-3 ~-22
 
 execute if score @s RANDOM matches 12 run clone -43 -1 11 -39 6 -8 ~-2 ~-3 ~-22
+
+execute if score @s RANDOM matches 13 run clone -50 -2 11 -46 6 -8 ~-2 ~-4 ~-22
 
 
 
