@@ -11,6 +11,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Pig tower"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:1}"
               }
             ]
           },
@@ -22,6 +26,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Bastion chest"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:2}"
               }
             ]
           },
@@ -33,6 +41,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Zombie tower"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:3}"
               }
             ]
           },
@@ -44,6 +56,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Spawnpoint"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:4}"
               }
             ]
           },
@@ -55,6 +71,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Levitate"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:5}"
               }
             ]
           },
@@ -65,7 +85,11 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Trou"
+                "name": "Hole"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:6}"
               }
             ]
           },
@@ -77,6 +101,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Upside down"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:7}"
               }
             ]
           },
@@ -87,7 +115,11 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Blidness"
+                "name": "Blindness"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:8}"
               }
             ]
           },
@@ -99,6 +131,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Wood wall"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:9}"
               }
             ]
           },
@@ -110,6 +146,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Sand trap"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:10}"
               }
             ]
           },
@@ -121,6 +161,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Wither rain"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:11}"
               }
             ]
           },
@@ -132,6 +176,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Pick me"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:12}"
               }
             ]
           },
@@ -143,6 +191,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Thunderbolt"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:13}"
               }
             ]
           },
@@ -154,6 +206,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Back tp"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:14}"
               }
             ]
           },
@@ -165,6 +221,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Creeper ow man"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:15}"
               }
             ]
           },
@@ -176,6 +236,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "I need healing"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:16}"
               }
             ]
           },
@@ -187,6 +251,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Waterworld"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:17}"
               }
             ]
           },
@@ -198,6 +266,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Anvil rain"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:18}"
               }
             ]
           },
@@ -209,6 +281,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Pumpkin time"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:19}"
               }
             ]
           },
@@ -220,6 +296,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Cursed musics"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:20}"
               }
             ]
           },
@@ -231,6 +311,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Slow the enemies"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:21}"
               }
             ]
           },
@@ -242,6 +326,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Accelerate the enemies"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:22}"
               }
             ]
           },
@@ -253,6 +341,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Cow run"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:23}"
               }
             ]
           },
@@ -264,6 +356,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "It's fishing time!"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:24}"
               }
             ]
           },
@@ -275,6 +371,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Unknown book"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:25}"
               }
             ]
           },
@@ -286,6 +386,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Flying sniper"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:26}"
               }
             ]
           },
@@ -297,6 +401,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Get swapped"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:27}"
               }
             ]
           },
@@ -308,6 +416,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Earthquake"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:28}"
               }
             ]
           },
@@ -319,6 +431,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Rabbit and wall"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:29}"
               }
             ]
           },
@@ -330,6 +446,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Cover me in gold"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:30}"
               }
             ]
           },
@@ -341,6 +461,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "So much wind!"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:31}"
               }
             ]
           },
@@ -352,6 +476,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Emergency teleportation"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:32}"
               }
             ]
           },
@@ -362,7 +490,11 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Multiple curse"
+                "name": "Damage curse"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:33}"
               }
             ]
           },
@@ -374,6 +506,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Explosion curse"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:34}"
               }
             ]
           },
@@ -385,6 +521,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Dripstones everywhere!"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:35}"
               }
             ]
           },
@@ -396,6 +536,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Cobwebs :("
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:36}"
               }
             ]
           },
@@ -407,6 +551,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Faster !"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:37}"
               }
             ]
           },
@@ -418,6 +566,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Slime attack !"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:38}"
               }
             ]
           },
@@ -429,6 +581,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Totem of undying"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:39}"
               }
             ]
           },
@@ -440,6 +596,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Blue shell"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:40}"
               }
             ]
           },
@@ -450,7 +610,11 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Exploding mode !"
+                "name": "Explosing mode !"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:41}"
               }
             ]
           },
@@ -462,6 +626,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Powder snow"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:42}"
               }
             ]
           },
@@ -473,6 +641,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Stone sword"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:43}"
               }
             ]
           },
@@ -484,6 +656,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Glowing"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:44}"
               }
             ]
           },
@@ -495,6 +671,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Pewpew the kamikaze !"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:45}"
               }
             ]
           },
@@ -506,6 +686,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "MAGICAL POOP"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:46}"
               }
             ]
           },
@@ -517,6 +701,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Cake is a lie"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:47}"
               }
             ]
           },
@@ -528,6 +716,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Emergency exit"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:48}"
               }
             ]
           },
@@ -539,6 +731,25 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Can't mine block"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:49}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Look at me"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:50}"
               }
             ]
           },
@@ -550,6 +761,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Fire"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:51}"
               }
             ]
           },
@@ -561,6 +776,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Guardians"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:52}"
               }
             ]
           },
@@ -572,6 +791,10 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Beep beep I'm a sheep !"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:53}"
               }
             ]
           },
@@ -583,9 +806,28 @@
               {
                 "function": "minecraft:set_name",
                 "name": "Name tag"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:54}"
               }
             ]
           },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Feather falling"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:55}"
+              }
+            ]
+          }
         ]
       }
     ]

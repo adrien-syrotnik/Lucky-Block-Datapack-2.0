@@ -1,0 +1,1 @@
+execute as @p at @s run fill ~1 ~ ~1 ~-1 ~2 ~-1 sand replace air

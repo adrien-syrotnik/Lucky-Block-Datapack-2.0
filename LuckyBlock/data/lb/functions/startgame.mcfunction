@@ -1,7 +1,7 @@
 #set number of players in the GameManager score "player"
 
 gamemode survival @a
-tp @r -1000 100 -1000
+tp @r -1000 -10 -1000
 
 kill @e[name=NextStage, type=armor_stand]
 
@@ -12,7 +12,7 @@ scoreboard players set @a currentplayer 0
 scoreboard players set @e[name="GameManager", type=armor_stand] currentplayer 1
 
 #summon the initial armor stand SpawnPlayer
-summon armor_stand -1000 100 -1000 {NoGravity:1b,Marker:0b,Invisible:0b,CustomName:'{"text":"SpawnPlayer"}'}
+summon armor_stand -1000 -10 -1000 {NoGravity:1b,Marker:0b,Invisible:0b,CustomName:'{"text":"SpawnPlayer"}'}
 
 execute as @e[name="GameManager", type=armor_stand] if score @s currentplayer <= @s nbplayers run function lb:initplayer
 
@@ -24,7 +24,7 @@ scoreboard players set @e[name="NextStage", type=armor_stand] level 0
 scoreboard players set @a finish 0
 scoreboard players set @a death 0
 scoreboard players set @a ingame 1
-scoreboard players reset @a oldscore
+scoreboard players reset @a oldideffect
 scoreboard players reset @a Position
 
 execute as @a at @s run spawnpoint @s ~ ~ ~ 180

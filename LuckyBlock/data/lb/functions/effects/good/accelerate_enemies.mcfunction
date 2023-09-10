@@ -1,0 +1,1 @@
+give @p egg{display:{Name:'{"text":"Gêne tes adversaires"}',Lore:['{"text":"Applique un effet de vitesse"}','{"text":"qui gêne tous tes adversaires"}']},Enchantments:[{}]} 1

@@ -1,0 +1,1 @@
+give @p snowball{display:{Name:'{"text":"Ralentis tes adversaires"}',Lore:['{"text":"Applique un effet de ralentissement"}','{"text":"sur tous tes adversaires"}']},Enchantments:[{}]} 1

@@ -1,98 +1,159 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:stone_pickaxe",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:1,display:{Name:'{\"text\":\"Ouvrier\"}',Lore:['{\"text\":\"Vas y\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:totem_of_undying",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:2,display:{Name:'{\"text\":\"Trompe-mort\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:leather_chestplate",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:3,display:{Name:'{\"text\":\"Tank\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:lectern",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:4,display:{Name:'{\"text\":\"Prêtre\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:wither_skeleton_skull",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:5,display:{Name:'{\"text\":\"Nécromencien\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:brick",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:6,display:{Name:'{\"text\":\"Mario\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:gold_nugget",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:7,display:{Name:'{\"text\":\"Croupier\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:splash_potion",
-          "functions": [
-            {
-              "function": "set_nbt",
-              "tag": "{id:8,Potion:\"minecraft:healing\",display:{Name:'{\"text\":\"Auspice funeste\"}',Lore:['{\"text\":\"Oui\"}','{\"text\":\"ligne 2\"}']}}"
-            }
-          ]
-        }
-
-      ]
-    }
-  ]
-}
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:stone_pickaxe",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:1,display:{Name:'{\"text\":\"Worker\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player is granted a random\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"stone tool each time he dies:\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"a pickaxe, an axe or a sword.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:bone",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:2,display:{Name:'{\"text\":\"Necromancer\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Each death of an opponent\",\"color\":\"aqua\",\"italic\":false}','[{\"text\":\"heals the player for 1 \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"❤\",\"color\":\"red\",\"italic\":false},{\"text\":\".\",\"color\":\"aqua\",\"italic\":false}]']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:lectern",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:3,display:{Name:'{\"text\":\"Priest\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player does not suffer\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"the first curse in each of his lives.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:chainmail_chestplate",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:4,display:{Name:'{\"text\":\"Armorsmith\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player equips a\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"random piece of armor\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"every 10 seconds.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:turtle_helmet",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:5,display:{Name:'{\"text\":\"The Tortoise and the Hare\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Being first grants the player\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"a resistance boost.\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\" \",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"Being last grants the player\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"a speed boost.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:bricks",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:6,display:{Name:'{\"text\":\"Mario\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Each time the player is dealing\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"with a jump, he can place\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"ONE block under his feet to help him.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:blaze_rod",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:7,display:{Name:'{\"text\":\"Wizard\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player is equipped\",\"color\":\"aqua\",\"italic\":false}','[{\"text\":\"with magic wand \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"Knockback II\",\"color\":\"dark_purple\",\"italic\":false,\"bold\":true}]']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:gold_nugget",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:8,display:{Name:'{\"text\":\"Gambler\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player has a 30% chance\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"of activating a random potion effect\",\"color\":\"aqua\",\"italic\":false}','[{\"text\":\"each time a \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"Lucky Block\",\"color\":\"yellow\",\"italic\":false,\"bold\":true},{\"text\":\" is destroyed.\",\"color\":\"aqua\",\"italic\":false}]']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:splash_potion",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:9,Potion:\"minecraft:healing\",display:{Name:'{\"text\":\"Doomsayer\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Each time he dies, the player\",\"color\":\"aqua\",\"italic\":false}','[{\"text\":\"reappears with a number of \",\"color\":\"aqua\",\"italic\":false},{\"text\":\"❤\",\"color\":\"red\",\"italic\":false}]','{\"text\":\"randomly chosen between 5 and 15.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:totem_of_undying",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:10,Potion:\"minecraft:healing\",display:{Name:'{\"text\":\"Death-dodger\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"Each time he dies, the player\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"reappears with a jump boost effect \",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"and a speed boost effect\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"for the next 10 secondes.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

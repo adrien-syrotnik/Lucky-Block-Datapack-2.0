@@ -1,0 +1,1 @@
+fill ~-1 ~6 ~-3 ~1 ~6 ~-3 anvil replace air

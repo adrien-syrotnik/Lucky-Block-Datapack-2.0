@@ -1,0 +1,1 @@
+summon creeper ~ ~ ~ {Invulnerable:0b,Glowing:1b,PersistenceRequired:1b,NoAI:1b,powered:1b,ExplosionRadius:3b,Fuse:50,ignited:1b}

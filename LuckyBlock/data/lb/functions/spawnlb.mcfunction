@@ -15,8 +15,8 @@ execute as @e[name=SpawnLB,type=minecraft:armor_stand] at @s align x align z run
 kill @e[name=SpawnLB]
 
 
-execute as @e[name=Effect,type=minecraft:armor_stand,scores={spawned=1}] if score explosif -1 matches -1 at @s run function lb:randomeffect
-execute as @e[name=Effect,type=minecraft:armor_stand,scores={spawned=1}] unless score explosif -1 matches -1 at @s run function lb:randomeffectweight
+execute as @e[name=Effect,type=minecraft:armor_stand,scores={spawned=1}] if score explosif -1 matches -1 at @s run function lb:random_effect_explosive
+execute as @e[name=Effect,type=minecraft:armor_stand,scores={spawned=1}] unless score explosif -1 matches -1 at @s run function lb:random_effect_weight
 
 
 

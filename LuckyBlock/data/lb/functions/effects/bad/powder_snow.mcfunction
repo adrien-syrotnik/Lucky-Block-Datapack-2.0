@@ -1,0 +1,1 @@
+fill ~-1 ~ ~-1 ~1 ~ ~1 powder_snow replace air

@@ -43,3 +43,5 @@ summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
+
+advancement grant @p only lb:lucky_block/fish_water

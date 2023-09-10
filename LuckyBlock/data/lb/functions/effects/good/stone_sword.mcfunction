@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:stone_sword",Count:1b}}

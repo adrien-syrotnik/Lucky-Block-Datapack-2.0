@@ -1,0 +1,1 @@
+fill ~1 ~1 ~-2 ~-1 ~1 ~-2 minecraft:cobweb replace air

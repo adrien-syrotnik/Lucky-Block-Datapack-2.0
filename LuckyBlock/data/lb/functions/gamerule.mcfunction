@@ -13,6 +13,8 @@ gamerule doWeatherCycle false
 gamerule mobGriefing false
 gamerule spawnRadius 0
 
+scoreboard objectives add on_death deathCount
+
 # advancement revoke @a from minecraft:adventure/root
 # advancement revoke @a from minecraft:story/root
 # advancement revoke @a from minecraft:nether/root
