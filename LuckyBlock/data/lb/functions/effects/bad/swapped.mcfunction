@@ -20,8 +20,8 @@ execute as @e[name="NextStage", type=armor_stand] unless score @s 0 matches 1 if
 scoreboard players reset @e[scores={0=1}] 0
 
 #tp players to their new location
-execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = player1 currentplayer at @s as @a if score @s currentplayer = @e[name="NextStage", type=armor_stand,limit=1,sort=nearest] currentplayer run tp @s ~ 100 -1000 180 0
-execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = player2 currentplayer at @s as @a if score @s currentplayer = @e[name="NextStage", type=armor_stand,limit=1,sort=nearest] currentplayer run tp @s ~ 100 -1000 180 0
+execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = player1 currentplayer at @s as @a if score @s currentplayer = @e[name="NextStage", type=armor_stand,limit=1,sort=nearest] currentplayer run tp @s ~ -10 -1000 180 0
+execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = player2 currentplayer at @s as @a if score @s currentplayer = @e[name="NextStage", type=armor_stand,limit=1,sort=nearest] currentplayer run tp @s ~ -10 -1000 180 0
 
 #change players spawnpoint
 execute as @a at @s if score @s currentplayer = player1 currentplayer run spawnpoint @s ~ ~ ~ 180

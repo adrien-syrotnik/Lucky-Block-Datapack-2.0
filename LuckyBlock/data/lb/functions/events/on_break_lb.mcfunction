@@ -1,0 +1,1 @@
+execute if score @s kit matches 8 run function lb:kits/effects/croupier

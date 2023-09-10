@@ -44,4 +44,4 @@ summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 
-advancement grant @p only lb:lucky_block/fish_water
+execute if score @p oldideffect matches 17 run advancement grant @p only lb:lucky_block/fish_water

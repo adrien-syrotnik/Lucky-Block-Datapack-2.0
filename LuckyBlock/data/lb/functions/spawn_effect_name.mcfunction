@@ -16,7 +16,7 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Wither rain"}'}}}]} run function lb:effects/bad/wither_rain
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Pick me"}'}}}]} run function lb:effects/good/pick_me
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Thunderbolt"}'}}}]} run function lb:effects/bad/thunderbolt
-execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Back tp"}'}}}]} run function lb:effects/bad/back_tp
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Back tp"}'}}}]} at @s as @p run function lb:effects/bad/back_tp
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Creeper ow man"}'}}}]} run function lb:effects/bad/creeper
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"I need healing"}'}}}]} run function lb:effects/good/healing
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Waterworld"}'}}}]} run function lb:effects/good/waterworld
@@ -29,7 +29,7 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"It\'s fishing time!"}'}}}]} run function lb:effects/good/fishing_time
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Unknown book"}'}}}]} run function lb:effects/good/unknown_book
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Flying sniper"}'}}}]} run function lb:effects/bad/flying_sniper
-execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Get swapped"}'}}}]} run function lb:effects/bad/get_swapped
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Get swapped"}'}}}]} run function lb:effects/bad/swapped
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Earthquake"}'}}}]} run function lb:effects/bad/earthquake
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Rabbit and wall"}'}}}]} run function lb:effects/bad/rabbit_and_wall
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Cover me in gold"}'}}}]} run function lb:effects/good/cover_me_in_gold

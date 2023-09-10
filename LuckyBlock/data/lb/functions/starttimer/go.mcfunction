@@ -12,4 +12,5 @@ scoreboard players set ingame ingame 1
 bossbar set minecraft:timer visible true
 
 execute as @a[scores={kit=1}] at @s run function lb:kits/effects/ouvrier
-execute as @a[scores={kit=1}] at @s run function lb:kits/effects/sorcier
+execute as @a[scores={kit=7}] at @s run function lb:kits/effects/sorcier
+execute as @a[scores={kit=9}] at @s run function lb:kits/effects/auspice

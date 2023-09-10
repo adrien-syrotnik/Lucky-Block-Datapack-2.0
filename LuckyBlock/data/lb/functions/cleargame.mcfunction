@@ -22,3 +22,6 @@ bossbar set minecraft:timer visible false
 scoreboard objectives remove Distance
 scoreboard objectives add Distance dummy
 scoreboard objectives setdisplay sidebar Distance
+
+execute as @a at @s run attribute @s minecraft:generic.max_health base set 20
+kill @e[name="jeb_"]

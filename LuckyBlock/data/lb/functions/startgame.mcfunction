@@ -34,7 +34,6 @@ kill @e[name="SpawnPlayer", type=armor_stand]
 
 effect give @a instant_health 1 10 true
 
+
 # start timer for choosing kits
 function lb:kits/timer/start
-
-kill @e[name="jeb_"]
