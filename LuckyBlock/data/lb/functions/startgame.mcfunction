@@ -25,6 +25,7 @@ scoreboard players set @a finish 0
 scoreboard players set @a death 0
 scoreboard players set @a ingame 1
 scoreboard players reset @a oldscore
+scoreboard players reset @a Position
 
 execute as @a at @s run spawnpoint @s ~ ~ ~ 180
 
@@ -33,7 +34,7 @@ kill @e[name="SpawnPlayer", type=armor_stand]
 
 effect give @a instant_health 1 10 true
 
-advancement grant @a only lb:lucky_block/lucky_block
+# start timer for choosing kits
+function lb:kits/timer/start
 
-function lb:starttimer/start
-
+kill @e[name="jeb_"]

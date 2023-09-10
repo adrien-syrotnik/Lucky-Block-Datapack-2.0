@@ -1,4 +1,4 @@
 title @a title {"text":"3"}
-title @a subtitle {"text":""}
+tag @a remove endkittimer
 execute as @a at @s run playsound entity.experience_orb.pickup master @p ~ ~ ~ 1 1
-schedule function lb:starttimer/2 1s
+schedule function lb:kits/timer/2 1s

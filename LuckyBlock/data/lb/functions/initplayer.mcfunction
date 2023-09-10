@@ -7,7 +7,7 @@ execute as @a if score @s currentplayer = @e[name="GameManager", type=armor_stan
 
 #execute as @a if score @s currentplayer = @e[name="GameManager", type=armor_stand, limit=1] currentplayer at @e[name="SpawnPlayer", type=armor_stand, limit=1] positioned ~ ~-1 ~ run tp @e[type=armor_stand, limit=1,sort=nearest,name="NextStage"] ~ ~ ~-5
 
-execute as @a if score @s currentplayer = @e[name="GameManager", type=armor_stand, limit=1] currentplayer at @e[name="SpawnPlayer", type=armor_stand, limit=1] run clone -1002 98 -1002 -997 101 -997 ~-2 ~-2 ~-2
+execute as @a if score @s currentplayer = @e[name="GameManager", type=armor_stand, limit=1] currentplayer at @e[name="SpawnPlayer", type=armor_stand, limit=1] run clone -1 -27 6 5 -24 1 ~-3 ~-2 ~-2
 
 
 #teleport the armor stand for the next player

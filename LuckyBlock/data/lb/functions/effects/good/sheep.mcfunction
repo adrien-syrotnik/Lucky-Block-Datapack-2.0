@@ -1,0 +1,1 @@
+summon sheep ~ ~ ~ {Color:14b,ActiveEffects:[{Id:24,Amplifier:1b,Duration:-1,ShowParticles:0b}]}

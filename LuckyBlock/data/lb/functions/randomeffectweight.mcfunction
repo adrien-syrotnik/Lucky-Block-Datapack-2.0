@@ -4,6 +4,8 @@ function lb:rand
 
 scoreboard players operation level RANDOM = @s RANDOM
 
+#show effect
+title @p actionbar [{"text":"Effect : "},{"score":{"name":"@s","objective":"RANDOM"}}]
 
 execute if score level RANDOM matches 0..4 run summon minecraft:pig ~ ~1 ~ {Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig,Passengers:[{id:pig}]}]}]}]}]}]}]}
 
@@ -15,7 +17,7 @@ execute if score level RANDOM matches 15..17 at @s as @p run function lb:effects
 
 execute if score level RANDOM matches 18..22 at @s as @p run effect give @s levitation 3 1
 
-execute if score level RANDOM matches 23..26 run function lb:effects/hole
+execute if score level RANDOM matches 23..26 run function lb:effects/bad/hole
 
 execute if score level RANDOM matches 27..29 as @p at @s run tp @s ~ ~ ~ ~180 ~180
 
@@ -107,7 +109,7 @@ execute if score level RANDOM matches 112 run fill ~-2 ~4 ~-2 ~2 ~4 ~2 minecraft
 execute if score level RANDOM matches 113..116 run fill ~1 ~1 ~-2 ~-1 ~1 ~-2 minecraft:cobweb replace air
 
 execute if score level RANDOM matches 117..120 run effect give @p minecraft:haste 10 40 false
-execute if score level RANDOM matches 118..120 run tellraw @p ["",{"text":"[Lucky Block] Vous minez plus vite pendant ","color":"gold"},{"text":"10 secondes ","color":"dark_red"}]
+execute if score level RANDOM matches 117..120 run tellraw @p ["",{"text":"[Lucky Block] Vous minez plus vite pendant ","color":"gold"},{"text":"10 secondes ","color":"dark_red"}]
 
 
 execute if score level RANDOM matches 121..122 run summon slime ~ ~ ~ {Size:40,Attributes:[{Name:generic.attack_damage,Base:1}]}
@@ -168,6 +170,10 @@ execute if score level RANDOM matches 154..157 run fill ~-2 ~ ~-2 ~2 ~ ~2 fire r
 
 execute if score level RANDOM matches 158..159 run particle minecraft:elder_guardian ~ ~ ~ ~ ~ ~ 1 1 force @p
 execute if score level RANDOM matches 158..159 run playsound minecraft:entity.elder_guardian.curse master @p ~ ~ ~ 2 1 1
+
+execute if score level RANDOM matches 160..162 run function lb:effects/good/sheep
+
+execute if score level RANDOM matches 163..165 run function lb:effects/good/tag_item
 
 
 scoreboard players operation @p oldscore = level RANDOM

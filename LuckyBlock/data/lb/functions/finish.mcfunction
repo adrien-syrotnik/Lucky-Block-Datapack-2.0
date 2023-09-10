@@ -1,4 +1,5 @@
 gamemode spectator @s
+scoreboard players reset @s abandon
 scoreboard players set @s finish 1
 clear @s
 stopsound @s
@@ -14,7 +15,7 @@ execute as @a[scores={finish=1..}] unless score @s currentplayer = @p currentpla
 scoreboard players set @s ingame 0
 
 #afficher le temps du joueur
-function lb:top/calculatetime
+function lb:scores/calculatetime
 tellraw @a ["",{"text":"\n"},{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" a atteint l'arrivée en ","color":"gold"},{"score":{"name":"@s","objective":"minutes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"secondes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"centieme"},"color":"gold"}]
 
 #old execute if score level0weight maxweightstage = 10 number if score level1weight maxweightstage = 10 number if score level2weight maxweightstage = 10 number if score level3weight maxweightstage = 10 number if score @s timerun < 2400 number run advancement grant @s only lb:lucky_block/fast

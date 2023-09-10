@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:sheep,name="jeb_"] at @s run execute as @p[distance=..4,gamemode=survival,sort=nearest] at @s run advancement grant @s only lb:lucky_block/over_the_rainbow
+execute as @a[advancements={lb:lucky_block/over_the_rainbow=true}] at @s run effect give @e[type=minecraft:sheep,name="jeb_",distance=..6,sort=nearest] minecraft:levitation 255 255 true
+execute as @e[type=minecraft:sheep,name="jeb_"] at @s run playsound minecraft:entity.firework_rocket.launch ambient @a ~ ~ ~ 1 0.1 0

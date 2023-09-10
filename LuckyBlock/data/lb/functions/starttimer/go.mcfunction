@@ -5,6 +5,7 @@ scoreboard players set @a abandon 0
 item replace entity @a container.17 with redstone_block{display:{Name:'{"text":"Give up?","color":"dark_red","bold":false,"italic":true}',Lore:['{"text":"Click on the item to ff"}']}} 1
 
 execute as @e[tag=startwait] at @s run fill ~-2 ~ ~-2 ~2 ~2 ~-2 air replace barrier
+kill @e[tag=startwait]
 
 scoreboard players set @a timerun 0
 scoreboard players set ingame ingame 1

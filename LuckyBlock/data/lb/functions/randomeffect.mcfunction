@@ -1,8 +1,15 @@
-scoreboard players set max RANDOM 53
+scoreboard players set max RANDOM 55
 
 function lb:rand
 
+#loot replace block -8 -60 -4 container.0 loot lb:random_effect_weight 
+
+data modify storage lb:rand level set from storage lb:rand RANDOM
+
 scoreboard players operation level RANDOM = @s RANDOM
+
+#show effect
+title @p actionbar [{"text":"Effect : "},{"score":{"name":"@s","objective":"RANDOM"}}]
 
 
 execute if score level RANDOM matches 0 run function lb:effects/good/pig
@@ -155,6 +162,10 @@ execute if score level RANDOM matches 51 run fill ~-2 ~ ~-2 ~2 ~ ~2 fire replace
 
 execute if score level RANDOM matches 52 run particle minecraft:elder_guardian ~ ~ ~ ~ ~ ~ 1 1 force @p
 execute if score level RANDOM matches 52 run playsound minecraft:entity.elder_guardian.curse master @p ~ ~ ~ 2 1 1
+
+execute if score level RANDOM matches 53 run function lb:effects/good/sheep
+
+execute if score level RANDOM matches 54 run function lb:effects/good/tag_item
 
 scoreboard players operation @p oldscore = level RANDOM
 
