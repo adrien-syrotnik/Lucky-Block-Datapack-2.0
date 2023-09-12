@@ -3,6 +3,9 @@ scoreboard players remove @e[scores={count=1..}] count 1
 kill @e[type=skeleton,scores={count=0}]
 kill @e[type=shulker,scores={count=0}]
 
+execute as @e[type=turtle,scores={count=0}] at @s run summon creeper ~ ~ ~ {ExplosionRadius:8b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"I AM the Danger!","color":"dark_green","bold":true}'}
+execute as @e[type=turtle,scores={count=0}] run kill @s
+
 execute as @e[name=WaterDis,scores={count=1},type=armor_stand] at @s run fill ~-2 ~5 ~-6 ~2 ~-5 ~6 air replace water
 kill @e[name=WaterDis,scores={count=0}]
 
