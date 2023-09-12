@@ -1,6 +1,7 @@
 scoreboard players remove @e[scores={count=1..}] count 1
 
 kill @e[type=skeleton,scores={count=0}]
+kill @e[type=shulker,scores={count=0}]
 
 execute as @e[name=WaterDis,scores={count=1},type=armor_stand] at @s run fill ~-2 ~5 ~-6 ~2 ~-5 ~6 air replace water
 kill @e[name=WaterDis,scores={count=0}]
@@ -93,3 +94,7 @@ execute as @a[scores={kami=20}] at @s run playsound entity.experience_orb.pickup
 execute as @a[scores={kami=1}] at @s run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:5b,CustomName:'{"text":"Kamikaze","color":"dark_red","bold":true}'}
 kill @a[scores={kami=1}]
 scoreboard players remove @a[scores={kami=1..}] kami 1
+
+execute as @a[scores={useBedRed=1..}] at @s run function lb:effects/bed/on_use_bed
+
+execute as @a[scores={music=1..}] at @s run function lb:effects/good/bcs_music

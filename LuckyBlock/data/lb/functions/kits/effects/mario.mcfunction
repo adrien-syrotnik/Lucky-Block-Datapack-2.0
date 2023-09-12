@@ -1,0 +1,2 @@
+give @s experience_bottle{display:{Name:'[{"text":"bite","color":"aqua","bold":true,"obfuscated":true},{"text":" Wahooo ! ","color":"gold","bold":true,"strikethrough":false,"obfuscated":false},{"text":"bite","color":"aqua","bold":true,"obfuscated":true}]',Lore:['{"text":"Place a block","color":"aqua"}','{"text":"under your feet.","color":"aqua","italic":false}']},HideFlags:255,Enchantments:[{}]} 1
+

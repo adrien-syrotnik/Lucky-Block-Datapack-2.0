@@ -58,6 +58,11 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Beep beep I\'m a sheep !"}'}}}]} run function lb:effects/good/sheep
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Name tag"}'}}}]} run function lb:effects/good/tag_item
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Feather falling"}'}}}]} run function lb:effects/good/feather_falling
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Stone Axe"}'}}}]} run function lb:effects/good/stone_axe
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Golem"}'}}}]} run function lb:effects/bad/golem
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"THE Red Bed"}'}}}]} run function lb:effects/good/red_bed
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Shulker"}'}}}]} run function lb:effects/bad/shulker
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BCS"}'}}}]} run function lb:effects/good/bcs
 
 scoreboard players operation @p oldideffect = @p ideffect
 

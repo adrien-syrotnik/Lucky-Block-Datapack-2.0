@@ -37,3 +37,5 @@ execute if score @s RANDOM matches 13 run clone -50 -2 11 -46 6 -8 ~-2 ~-4 ~-22
 
 
 tp @s ~ ~ ~-20
+
+execute at @a[scores={kit=6}] if score @s currentplayer = @p currentplayer as @p run function lb:kits/effects/mario

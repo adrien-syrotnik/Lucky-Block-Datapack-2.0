@@ -36,7 +36,7 @@
           {
             "type": "item",
             "weight": 1,
-            "name": "minecraft:lectern",
+            "name": "minecraft:golden_chestplate",
             "functions": [
               {
                 "function": "set_count",
@@ -44,7 +44,7 @@
               },
               {
                 "function": "set_nbt",
-                "tag": "{id:3,display:{Name:'{\"text\":\"Priest\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player does not suffer\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"the first curse in each of his lives.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
+                "tag": "{id:3,display:{Name:'{\"text\":\"Paladin\",\"color\":\"gold\",\"bold\":true,\"italic\":false}',Lore:['{\"text\":\"The player prevent the first\",\"color\":\"aqua\",\"italic\":false}','{\"text\":\"damage taken of each life.\",\"color\":\"aqua\",\"italic\":false}']},HideFlags:255}"
               }
             ]
           },

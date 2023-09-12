@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:light_blue_shulker_box"
+        },
+        "title": "Shiny full odd",
+        "description": "Find a shiny shulker among a hundred of its kind",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "lucky block": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

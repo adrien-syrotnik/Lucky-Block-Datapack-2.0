@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -20,7 +20,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 6,
+            "weight": 7,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -35,7 +35,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -50,7 +50,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -65,7 +65,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -80,7 +80,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -95,7 +95,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -110,7 +110,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -125,7 +125,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -140,7 +140,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -155,7 +155,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -170,7 +170,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -185,7 +185,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -200,7 +200,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -215,7 +215,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -230,7 +230,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -245,7 +245,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -260,7 +260,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -275,7 +275,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -290,7 +290,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -305,7 +305,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -320,7 +320,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -335,7 +335,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -350,7 +350,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -365,7 +365,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -380,7 +380,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -395,7 +395,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -410,7 +410,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -425,7 +425,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -455,7 +455,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -470,7 +470,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -485,7 +485,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -500,7 +500,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -515,7 +515,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -530,7 +530,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -545,7 +545,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 5,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -560,7 +560,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -575,7 +575,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -590,7 +590,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -620,7 +620,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -635,7 +635,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 5,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -650,7 +650,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -665,7 +665,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -680,7 +680,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -695,7 +695,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -710,7 +710,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -725,7 +725,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -740,7 +740,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -755,7 +755,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -770,7 +770,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 3,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -785,7 +785,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -800,7 +800,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -815,7 +815,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -830,7 +830,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 4,
+            "weight": 5,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -845,7 +845,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -860,7 +860,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 3,
+            "weight": 4,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -875,7 +875,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 2,
+            "weight": 1,
             "name": "minecraft:stone",
             "functions": [
               {
@@ -890,7 +890,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 2,
             "name": "minecraft:stone",
             "functions": [
               {

@@ -1,0 +1,3 @@
+scoreboard players set @s damage_pretre 0
+tellraw @s [{"text":"[Lucky Block] ","color":"dark_red","bold":true,"hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}},{"text":"Your ","color":"gold","bold":false,"hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}},{"text":"Divine Shield","color":"red","bold":false,"hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}},{"text":" is back.","color":"gold","bold":false,"hoverEvent":{"action":"show_text","value":[{"text":"","bold":true}]}}]
+effect give @s resistance infinite 4 true

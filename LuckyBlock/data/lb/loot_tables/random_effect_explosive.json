@@ -827,7 +827,82 @@
               "tag": "{id:55}"
             }
           ]
-        }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Stone Axe"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{id:56}"
+            }
+          ]
+        },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Golem"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:57}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "THE Red Bed"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:58}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Shulker"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:59}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "BCS"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:60}"
+              }
+            ]
+          }
       ]
     }
   ]

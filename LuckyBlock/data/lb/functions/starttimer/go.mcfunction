@@ -10,7 +10,10 @@ kill @e[tag=startwait]
 scoreboard players set @a timerun 0
 scoreboard players set ingame ingame 1
 bossbar set minecraft:timer visible true
+effect clear @a minecraft:resistance
 
 execute as @a[scores={kit=1}] at @s run function lb:kits/effects/ouvrier
+execute as @a[scores={kit=3}] at @s run function lb:kits/effects/pretre_effect
+execute as @a[scores={kit=4}] at @s run function lb:kits/effects/tank_schedule
 execute as @a[scores={kit=7}] at @s run function lb:kits/effects/sorcier
 execute as @a[scores={kit=9}] at @s run function lb:kits/effects/auspice

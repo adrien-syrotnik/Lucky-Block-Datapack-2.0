@@ -27,5 +27,5 @@ execute as @a at @p run xp set @s 0 points
 
 execute as @e[type=minecraft:sheep,name="jeb_"] at @s run particle minecraft:ambient_entity_effect ~0 ~0 ~0 0.1 0.1 0.1 1 100 force
 
-execute as @a[scores={on_death=1..}] at @s run function lb:events/ondeath
-execute as @a[scores={kit=5}] at @s run function lb:kits/effects/tortue
+#give stats book
+execute unless score ingame ingame matches 1 positioned 5000 99 5000 as @a[distance=..100] run function lb:give_stats

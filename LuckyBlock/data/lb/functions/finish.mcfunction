@@ -9,6 +9,9 @@ execute at @a run playsound minecraft:entity.player.levelup master @p ~ ~ ~ 2 1 
 
 execute as @a[scores={finish=1..}] unless score @s currentplayer = @p currentplayer run scoreboard players add @p finish 1
 
+# Add stats blocktravelled_stat to the player
+scoreboard players operation @s blocktravelled_stat += @s Distance
+
 #if you want to stop if 1 player left, uncomment this
 #scoreboard players add @s finish 1
 

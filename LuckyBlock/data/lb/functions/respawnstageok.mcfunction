@@ -196,7 +196,8 @@ execute if score @s randomstage matches 34 at @s run summon armor_stand ~ ~-1 ~1
 
 scoreboard players operation @s next_score += @s weightstagetoadd
 
-
+# Add stats to the player linked to the armor stand
+scoreboard players add @p platform_stat 1
 
 
 
