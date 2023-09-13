@@ -34,7 +34,7 @@ execute as @a if score @s currentplayer = player2 currentplayer run scoreboard p
 #tellraw
 execute as @a if score @s currentplayer = player1 currentplayer run scoreboard players set @s 0 1
 execute as @a if score @s currentplayer = player2 currentplayer run scoreboard players set @s 0 2
-tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@a[scores={0=1}]","bold":true,"color":"dark_red"},{"text":" et ","color":"gold"},{"selector":"@a[scores={0=2}]","bold":true,"color":"dark_red"},{"text":" on switch de voie ! ","color":"gold"}]
+tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@a[scores={0=1}]","bold":true,"color":"dark_red"},{"text":" and ","color":"gold"},{"selector":"@a[scores={0=2}]","bold":true,"color":"dark_red"},{"text":" switched their line!","color":"gold"}]
 execute as @a at @s if score @s 0 matches 1..2 run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 2 1.8 1
 scoreboard players set @a 0 0
 

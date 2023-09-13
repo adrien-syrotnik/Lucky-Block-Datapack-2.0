@@ -63,6 +63,9 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"THE Red Bed"}'}}}]} run function lb:effects/good/red_bed
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Shulker"}'}}}]} run function lb:effects/bad/shulker
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BCS"}'}}}]} run function lb:effects/good/bcs
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Ghost"}'}}}]} run function lb:effects/good/ghost
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Luck"}'}}}]} run function lb:effects/good/luck
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BadLuck"}'}}}]} run function lb:effects/bad/badluck
 
 scoreboard players operation @p oldideffect = @p ideffect
 

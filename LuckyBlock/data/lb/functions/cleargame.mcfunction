@@ -2,7 +2,7 @@
 execute as @e[name="mario"] at @s run fill ~-2 ~-12 ~-2 ~2 ~-8 ~2 minecraft:air replace minecraft:brown_stained_glass
 execute as @e[name="mario"] at @s run kill @s
 
-effect clear @a minecraft:resistance
+effect clear @a
 execute as @e[name="NextStage",type=armor_stand] at @s run function lb:clearsolo
 kill @e[type=bat]
 clear @a[gamemode=!creative]
@@ -14,6 +14,7 @@ scoreboard players reset @a oldideffect
 scoreboard players reset ingame ingame
 scoreboard players reset @a ingame
 scoreboard players reset @a abandon
+
 
 spawnpoint @a 5000 99 5000 0
 

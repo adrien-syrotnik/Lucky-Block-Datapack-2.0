@@ -9,8 +9,8 @@ execute if score @s RANDOM matches 4 run effect give @s minecraft:slowness 5 0 t
 execute if score @s RANDOM matches 5 run effect give @s minecraft:strength 10 1 true
 execute if score @s RANDOM matches 6 run effect give @s minecraft:weakness 10 0 true
 execute if score @s RANDOM matches 7 run effect give @s minecraft:jump_boost 5 1 true
-execute if score @s RANDOM matches 8 run effect give @s minecraft:luck infinite 100 true
-execute if score @s RANDOM matches 9 run effect give @s minecraft:unluck infinite 100 true
+execute if score @s RANDOM matches 8 run effect give @s minecraft:luck 10 100 true
+execute if score @s RANDOM matches 9 run effect give @s minecraft:unluck 10 100 true
 execute if score @s RANDOM matches 10 run effect give @s minecraft:slow_falling 10 1 true
 execute if score @s RANDOM matches 11 run effect give @s minecraft:instant_damage 1 0 true
 execute if score @s RANDOM matches 12 run effect give @s minecraft:poison 3 0 true
@@ -25,8 +25,8 @@ execute if score @s RANDOM matches 15 run effect give @s minecraft:slowness 5 0 
 execute if score @s RANDOM matches 15 run effect give @s minecraft:strength 10 1 true
 execute if score @s RANDOM matches 15 run effect give @s minecraft:weakness 10 0 true
 execute if score @s RANDOM matches 15 run effect give @s minecraft:jump_boost 5 1 true
-execute if score @s RANDOM matches 15 run effect give @s minecraft:luck infinite 100 true
-execute if score @s RANDOM matches 15 run effect give @s minecraft:unluck infinite 100 true
+execute if score @s RANDOM matches 15 run effect give @s minecraft:luck 10 100 true
+execute if score @s RANDOM matches 15 run effect give @s minecraft:unluck 10 100 true
 execute if score @s RANDOM matches 15 run effect give @s minecraft:slow_falling 10 1 true
 execute if score @s RANDOM matches 15 run effect give @s minecraft:instant_damage 1 0 true
 execute if score @s RANDOM matches 15 run effect give @s minecraft:poison 3 0 true

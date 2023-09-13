@@ -1,4 +1,5 @@
 scoreboard players remove @e[scores={count=1..}] count 1
+scoreboard players remove @a[scores={ghost_count=1..}] ghost_count 1
 
 kill @e[type=skeleton,scores={count=0}]
 kill @e[type=shulker,scores={count=0}]
@@ -25,13 +26,13 @@ scoreboard players reset @a[scores={book=20..}] book
 
 kill @e[type=snowball]
 execute as @a[scores={snowball=1..}] at @s run effect give @a[distance=1..] minecraft:slowness 3 5 true
-execute as @a[scores={snowball=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" applique l'effet ralentissement à tous les joueurs","color":"gold"}]
+execute as @a[scores={snowball=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Slowness effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={snowball=1..}] snowball
 
 
 kill @e[type=egg]
 execute as @a[scores={egg=1..}] at @s run effect give @a[distance=1..] minecraft:speed 1 80 true
-execute as @a[scores={egg=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" applique l'effet speed à tous les joueurs","color":"gold"}]
+execute as @a[scores={egg=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Speed effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={egg=1..}] egg
 
 #
@@ -101,3 +102,37 @@ scoreboard players remove @a[scores={kami=1..}] kami 1
 execute as @a[scores={useBedRed=1..}] at @s run function lb:effects/bed/on_use_bed
 
 execute as @a[scores={music=1..}] at @s run function lb:effects/good/bcs_music
+
+
+
+#ghost
+#first part, look for a survival player arround the ghost
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @p[distance=..1.5,gamemode=survival,tag=!ghost_start] run scoreboard players operation @s haunted_by = @p[tag=ghost_start] currentplayer
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" has been haunted by ","color":"gold"},{"selector":"@p","color":"dark_red"}]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run title @s title {"text":"You are haunted !","color":"dark_red"}
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run title @s subtitle [{"selector":"@p[tag=ghost_start]","color":"dark_red"},{"text":" is haunted by ","color":"gold"},{"selector":"@s","color":"dark_red"}]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run playsound minecraft:entity.vex.charge ambient @a ~ ~ ~ 2 1 1
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run say @p[tag=ghost_start]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run scoreboard players set @p[tag=ghost_start] ghost_count 60
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run scoreboard players set @s ghost_count 60
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tag @p[tag=ghost_start] add ghost_haunted
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run gamemode spectator @s
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run gamemode survival @p[tag=ghost_start]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tp @p[tag=ghost_start] @s
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tag @p[tag=ghost_start] remove ghost_start
+
+#second part, the ghost is haunting the player
+execute as @a[tag=ghost_haunted,scores={ghost_count=1..}] at @s as @a if score @s haunted_by = @p[tag=ghost_haunted] currentplayer run tp @s @p[tag=ghost_haunted]
+
+execute as @a[scores={ghost_count=..0},tag=ghost_haunted] at @s as @e[tag=ghost,type=armor_stand] if score @s currentplayer = @p[tag=ghost_haunted] currentplayer run tp @p[tag=ghost_haunted] @s
+execute as @a[scores={ghost_count=..0},tag=ghost_start] at @s as @e[tag=ghost,type=armor_stand] if score @s currentplayer = @p[tag=ghost_start] currentplayer run tp @p[tag=ghost_start] @s
+execute as @a[scores={ghost_count=..0}] at @s as @e[tag=ghost,type=armor_stand] if score @s currentplayer = @p[scores={ghost_count=..0}] currentplayer run effect give @p[scores={ghost_count=..0}] minecraft:resistance 1 10 true
+execute as @a[scores={ghost_count=..0}] at @s as @e[tag=ghost,type=armor_stand] if score @s currentplayer = @p[scores={ghost_count=..0}] currentplayer run kill @s
+gamemode survival @a[scores={ghost_count=..0}]
+execute as @a[scores={ghost_count=..0}] at @s run playsound minecraft:entity.vex.ambient ambient @a ~ ~ ~ 1 2
+scoreboard players reset @a[scores={ghost_count=..0,haunted_by=0..}] haunted_by
+effect clear @a[scores={ghost_count=..0},tag=ghost_haunted] mining_fatigue
+effect clear @a[scores={ghost_count=..0},tag=ghost_start] mining_fatigue
+tag @a[scores={ghost_count=..0}] remove ghost_haunted
+tag @a[scores={ghost_count=..0}] remove ghost_start
+scoreboard players reset @a[scores={ghost_count=..0}] ghost_count

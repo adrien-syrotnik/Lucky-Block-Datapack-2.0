@@ -1,5 +1,5 @@
-title @a title {"text":"Fin du choix des kits","color":"dark_red"}
-title @a subtitle {"text":"Lancement de la partie...","color":"dark_red"}
+title @a title {"text":"Kit choice is over.","color":"dark_red"}
+title @a subtitle {"text":"Game is starting...","color":"dark_red"}
 
 execute as @e[tag=startwaitkit] at @s run setblock ~ ~ ~-1 air
 

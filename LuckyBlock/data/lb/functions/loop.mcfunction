@@ -29,3 +29,6 @@ execute as @e[type=minecraft:sheep,name="jeb_"] at @s run particle minecraft:amb
 
 #give stats book
 execute unless score ingame ingame matches 1 positioned 5000 99 5000 as @a[distance=..100] run function lb:give_stats
+
+execute as @a[scores={music_lol=1..}] at @s run function lb:music
+execute as @a[scores={music_lol2=1..}] at @s run function lb:music2

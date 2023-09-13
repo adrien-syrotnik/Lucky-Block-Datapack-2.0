@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dragon_head"
+        },
+        "title": "Finish Minecraft like a pro",
+        "description": "Kill an Ender Dragon using a bed.",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "fish + water": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

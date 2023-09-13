@@ -8,7 +8,10 @@ execute as @p[tag=endkittimer] run scoreboard players set kitselected nbplayers 
 execute as @a[tag=endkittimer] if entity @s[scores={kit=0..}] run scoreboard players add kitselected nbplayers 1
 execute as @p[tag=endkittimer] if score @e[name="GameManager",limit=1,type=armor_stand] nbplayers = kitselected nbplayers run function lb:kits/timer/startendtimer
 
-execute as @a[scores={on_death=1..}] at @s run function lb:events/ondeath
+
+execute as @a[scores={on_death=2..}] at @s run function lb:events/ondeath
+execute as @a[scores={on_death=1..}] at @s run scoreboard players set @s on_death 2
+
 execute as @a[scores={kit=3}] at @s run function lb:kits/effects/pretre
 execute as @a[scores={kit=5}] at @s run function lb:kits/effects/tortue
 execute as @a[scores={kit=6}] at @s run function lb:kits/effects/mario_effect

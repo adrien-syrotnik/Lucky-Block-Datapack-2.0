@@ -1,2 +1,2 @@
 scoreboard players set explosif -1 0
-tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"text":"Fin du mode Explosif !","color":"gold"}]
+tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"text":"Exploding mode is over!","color":"gold"}]
