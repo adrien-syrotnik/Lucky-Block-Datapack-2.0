@@ -32,3 +32,6 @@ execute unless score ingame ingame matches 1 positioned 5000 99 5000 as @a[dista
 
 execute as @a[scores={music_lol=1..}] at @s run function lb:music
 execute as @a[scores={music_lol2=1..}] at @s run function lb:music2
+
+function lb:bossbar
+execute as @a[scores={bell=1..}, gamemode=adventure] at @s run function lb:bell

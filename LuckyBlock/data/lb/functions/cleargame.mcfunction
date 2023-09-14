@@ -34,3 +34,5 @@ execute as @a at @s run attribute @s minecraft:generic.max_health base set 20
 kill @e[name="jeb_"]
 
 execute as @a at @s run schedule clear lb:kits/effects/tank_schedule
+
+scoreboard players reset @a kit

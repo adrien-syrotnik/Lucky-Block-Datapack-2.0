@@ -7,3 +7,9 @@ Jump command block :
 execute as @p[distance=..1.5] run fill ~ ~ ~17 ~ ~ ~ gravel
 
 03 09 2023 -> remove all default advancements, begin 1.20.1 update, update signs at spawn, begin create new platforms (woods)
+
+
+Armor stands spawn
+/summon armor_stand 4988 102 5000 {CustomNameVisible:1b,NoGravity:1b,Small:1b,Invisible:1b,NoBasePlate:0b,Tags:["bestscore5"],CustomName:'[{"text":"*****","color":"dark_red","bold":true},{"text":" Best times ","color":"gold","bold":true,"italic":true},{"text":"*****","color":"dark_red","bold":true}]'}
+/summon armor_stand 4988 100.6 5000 {CustomNameVisible:1b,Small:1b,NoGravity:1b,Invisible:1b,NoBasePlate:0b,Tags:["bestscore1"],CustomName:'{"text":"[No timer save]"}'}
+/summon armor_stand 4988 99.6 5000 {CustomNameVisible:1b,NoGravity:1b,Small:1b,Invisible:1b,NoBasePlate:0b,Tags:["bestscore7"],CustomName:'{"text":"***** *************** *****","color":"dark_red","bold":true,"italic":true}'}
