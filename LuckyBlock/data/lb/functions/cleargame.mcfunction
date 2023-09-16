@@ -15,6 +15,7 @@ scoreboard players reset ingame ingame
 scoreboard players reset @a ingame
 scoreboard players reset @a abandon
 
+gamerule keepInventory false
 
 spawnpoint @a 5000 99 5000 0
 
@@ -31,7 +32,9 @@ scoreboard objectives add Distance dummy
 scoreboard objectives setdisplay sidebar Distance
 
 execute as @a at @s run attribute @s minecraft:generic.max_health base set 20
+effect give @s minecraft:instant_health 1 100 true
 kill @e[name="jeb_"]
+kill @e[tag=spawnpoint,type=armor_stand]
 
 execute as @a at @s run schedule clear lb:kits/effects/tank_schedule
 

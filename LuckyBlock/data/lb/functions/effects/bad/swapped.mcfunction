@@ -24,8 +24,8 @@ execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = pl
 execute as @e[name="NextStage", type=armor_stand] if score @s currentplayer = player2 currentplayer at @s as @a if score @s currentplayer = @e[name="NextStage", type=armor_stand,limit=1,sort=nearest] currentplayer run tp @s ~ -10 -1000 180 0
 
 #change players spawnpoint
-execute as @a at @s if score @s currentplayer = player1 currentplayer run spawnpoint @s ~ ~ ~ 180
-execute as @a at @s if score @s currentplayer = player2 currentplayer run spawnpoint @s ~ ~ ~ 180
+execute as @a at @s if score @s currentplayer = player1 currentplayer run function lb:spawnpoint
+execute as @a at @s if score @s currentplayer = player2 currentplayer run function lb:spawnpoint
 
 #inverser score breakLB
 execute as @a if score @s currentplayer = player1 currentplayer run scoreboard players operation @s breakLB = player2 breakLB

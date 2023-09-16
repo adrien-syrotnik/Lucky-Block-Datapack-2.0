@@ -21,7 +21,7 @@ execute positioned 0 0 0 run tp @e[tag=finalscore,distance=..2] -7 -59 -7
 execute as @e[tag=finalscore] if score level0weight maxweightstage = @s lbphase1 if score level1weight maxweightstage = @s lbphase2 if score level2weight maxweightstage = @s lbphase3 if score level3weight maxweightstage = @s lbphase4 run scoreboard players set @s level 4
 
 #get the position of the player from time_run, compare them to the scoreboard top1,top2,top3
-scoreboard players set @a[scores={abandon=0}] Position 1
+scoreboard players set @a[scores={abandon=0},gamemode=spectator] Position 1
 scoreboard players set top1old Position 1
 scoreboard players set top2old Position 2
 scoreboard players set top3old Position 3
@@ -33,7 +33,7 @@ execute as @e[tag=finalscore,scores={level=4}] unless score @s top2 matches 0.. 
 execute as @e[tag=finalscore,scores={level=4}] unless score @s top3 matches 0.. run scoreboard players reset top3old Position
 
 
-execute as @e[tag=finalscore,scores={level=4}] at @a[scores={abandon=0}] run function lb:scores/getscoreposition
+execute as @e[tag=finalscore,scores={level=4}] at @a[scores={abandon=0},gamemode=spectator] run function lb:scores/getscoreposition
 
 # voir si cette commande est mieux
 # execute as @a run scoreboard operation scoreHolder mostKills > @s kills

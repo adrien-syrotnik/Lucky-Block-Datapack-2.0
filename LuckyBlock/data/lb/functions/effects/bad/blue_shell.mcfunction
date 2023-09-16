@@ -1,3 +1,3 @@
 summon armor_stand ~ ~-1 ~ {Tags:["BlueShell"],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1915369139,837830495,-1294780863,1101422121],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA0ZjllZWNiOWI2NmNhNTY0MDQ1MzgwOTNlNDcyZTY5MDE0ZGY3MmM0MjRhNzZkMjhhZmE4ZWZkZTVhMjNiMiJ9fX0="}]}}}}],HandItems:[{},{}],DisabledSlots:1052688,NoGravity:1b}
-scoreboard players set @e[type=armor_stand,tag=BlueShell,limit=1,sort=nearest] count 200
+execute as @e[type=armor_stand,tag=BlueShell] unless score @s count matches 0.. run scoreboard players set @s count 200
 tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@p","bold":true,"color":"dark_red"},{"text":" threw a ","color":"gold"},{"text":"Blue Shell ","bold":true,"color":"blue"},{"text":"on the first player!","color":"gold"}]

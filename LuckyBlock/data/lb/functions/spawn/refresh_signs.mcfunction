@@ -22,9 +22,13 @@ setblock 5011 101 5002 birch_wall_sign[facing=west]{front_text:{messages:['{"tex
 setblock 5011 100 5002 birch_wall_sign[facing=west]{front_text:{messages:['{"text":"**************"}','{"text":"Phase 4","color":"dark_blue"}','{"score":{"name":"level3weight","objective":"maxweightstage"},"color":"gold"}','{"text":"**************"}']},is_waxed:1b} destroy
 setblock 5011 99 5002 birch_wall_sign[facing=west]{front_text:{messages:['{"text":" ","clickEvent":{"action":"run_command","value":"function lb:scores/askrefresh"}}','{"text":"[-]","color":"dark_red","clickEvent":{"action":"run_command","value":"execute if score level3weight maxweightstage > @e[name=GameManager,limit=1] 1 run scoreboard players remove level3weight maxweightstage 1"}}','{"text":" ","clickEvent":{"action":"run_command","value":"execute if score level3weight maxweightstage >= @e[name=GameManager,limit=1] 1 run setblock 5011 100 5002 birch_wall_sign[facing=west]{front_text:{messages:[\'{\\"text\\":\\"**************\\"}\',\'{\\"text\\":\\"Phase 4\\",\\"color\\":\\"dark_blue\\"}\',\'{\\"score\\":{\\"name\\":\\"level3weight\\",\\"objective\\":\\"maxweightstage\\"},\\"color\\":\\"gold\\"}\',\'{\\"text\\":\\"**************\\"}\']},is_waxed:1b} destroy"}}','{"text":""}']}} destroy
 
+#configuration game -> enable passive games
+function lb:spawn/refresh_passive_sign
+#change platform types
+function lb:spawn/refresh_platform_type
 
-# Start Game
-setblock 5000 100 5013 oak_wall_sign[facing=north]{front_text:{messages:['{"text":"**************"}','{"text":"Start","color":"dark_green"}','{"text":""}','{"text":"**************","clickEvent":{"action":"run_command","value":"function lb:startgame"}}']},is_waxed:1b} destroy
+# Start Game (Relaced by the bell)
+# setblock 5000 100 5013 oak_wall_sign[facing=north]{front_text:{messages:['{"text":"**************"}','{"text":"Start","color":"dark_green"}','{"text":""}','{"text":"**************","clickEvent":{"action":"run_command","value":"function lb:startgame"}}']},is_waxed:1b} destroy
 
 # Reset Scores
 # setblock ~ ~ ~ oak_wall_sign[facing=east]{front_text:{messages:['{"text":" ","clickEvent":{"action":"run_command","value":"title @a title {\\"text\\":\\"Scores deleted\\",\\"color\\":\\"dark_red\\",\\"bold\\":true}"}}','{"text":"Are you sure?","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"kill @e[tag=finalscore]"}}','{"text":" ","clickEvent":{"action":"run_command","value":"function lb:spawn/refresh_signs"}}','{"text":""}']}} destroy

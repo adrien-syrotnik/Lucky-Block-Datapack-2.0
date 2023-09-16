@@ -34,4 +34,5 @@ execute as @a[scores={music_lol=1..}] at @s run function lb:music
 execute as @a[scores={music_lol2=1..}] at @s run function lb:music2
 
 function lb:bossbar
-execute as @a[scores={bell=1..}, gamemode=adventure] at @s run function lb:bell
+execute as @a[scores={bell=1..},gamemode=adventure] at @s run function lb:bell
+execute as @a[scores={bell=1..},gamemode=creative] at @s run scoreboard players set @s bell 0

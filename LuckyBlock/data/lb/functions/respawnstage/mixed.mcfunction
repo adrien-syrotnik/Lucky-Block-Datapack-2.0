@@ -13,7 +13,7 @@ execute if score @s randomstage matches 23..34 run scoreboard players set @s wei
 scoreboard players operation @s weightstage += @s weightstagetoadd
 
 #if ok run spawn stage
-execute unless score @s weightstage > @s maxweightstage run function lb:respawnstageok
+execute unless score @s weightstage > @s maxweightstage run function lb:respawnstage/ok/ok_mixed
 
 execute if score @s weightstage > @s maxweightstage run scoreboard players operation @s weightstage -= @s weightstagetoadd
 

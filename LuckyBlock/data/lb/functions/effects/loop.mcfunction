@@ -25,13 +25,13 @@ scoreboard players add @a[scores={book=1..}] book 1
 scoreboard players reset @a[scores={book=20..}] book
 
 kill @e[type=snowball]
-execute as @a[scores={snowball=1..}] at @s run effect give @a[distance=1..] minecraft:slowness 3 5 true
+execute as @a[scores={snowball=1..},gamemode=survival] at @s run effect give @a[distance=1..] minecraft:slowness 3 5 true
 execute as @a[scores={snowball=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Slowness effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={snowball=1..}] snowball
 
 
 kill @e[type=egg]
-execute as @a[scores={egg=1..}] at @s run effect give @a[distance=1..] minecraft:speed 1 80 true
+execute as @a[scores={egg=1..},gamemode=survival] at @s run effect give @a[distance=1..] minecraft:speed 1 80 true
 execute as @a[scores={egg=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Speed effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={egg=1..}] egg
 
@@ -60,7 +60,8 @@ execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=ra
 
 scoreboard players remove @a[scores={wind=1..}] wind 1
 execute as @a[scores={wind=1..}] at @s run tp @s ~ ~ ~0.1
-execute as @a[scores={wind=1..}] at @s run playsound minecraft:entity.phantom.flap ambient @p ~ ~ ~ 1 1
+# execute as @a[scores={wind=1..}] at @s run playsound minecraft:entity.phantom.flap ambient @p ~ ~ ~ 1 1
+execute as @a[scores={wind=99}] at @s run playsound minecraft:item.elytra.flying ambient @p ~ ~ ~ 1 2
 
 execute as @e[type=slime] run data merge entity @s {Health:0.1f,Attributes:[{Name:generic.attack_damage,Base:0.5}]}
 
@@ -78,7 +79,7 @@ execute at @e[tag=BlueShell,scores={count=1..}] as @a if score @s currentplayer 
 execute as @e[tag=BlueShell,scores={count=1..}] at @s run tp @s ^ ^ ^1
 
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] unless score BestDistance currentplayer = @p currentplayer run damage @p 3 cactus by @s
-execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:4b,CustomName:'{"text":"Carapace Bleue","color":"dark_blue","bold":true}'}
+execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:4b,CustomName:'{"text":"Carapace Bleue","color":"dark_blue","bold":true}',Invulnerable:1b}
 #Detect if the player touched is near the end, for the success
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer as @e[name="NextStage",type=armor_stand,scores={level=4},distance=..10] if score @s currentplayer = @p currentplayer run advancement grant @p only lb:lucky_block/blue_shell_for_the_winner
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run kill @s
@@ -117,6 +118,7 @@ execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_s
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run scoreboard players set @s ghost_count 60
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tag @p[tag=ghost_start] add ghost_haunted
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run gamemode spectator @s
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run effect give @p[tag=ghost_start] minecraft:resistance 3 255
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run gamemode survival @p[tag=ghost_start]
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tp @p[tag=ghost_start] @s
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tag @p[tag=ghost_start] remove ghost_start
@@ -136,3 +138,7 @@ effect clear @a[scores={ghost_count=..0},tag=ghost_start] mining_fatigue
 tag @a[scores={ghost_count=..0}] remove ghost_haunted
 tag @a[scores={ghost_count=..0}] remove ghost_start
 scoreboard players reset @a[scores={ghost_count=..0}] ghost_count
+
+#spawnpoint protection
+execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~ ~ air run setblock ~ ~ ~ air
+execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~1 ~ air run setblock ~ ~1 ~ air

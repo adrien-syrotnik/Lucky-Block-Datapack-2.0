@@ -1,5 +1,5 @@
 scoreboard players reset @a mdegat
-scoreboard players set @r mdegat 1
+scoreboard players set @r[gamemode=survival] mdegat 1
 
 effect give @a[scores={mdegat=1..}] instant_damage
 

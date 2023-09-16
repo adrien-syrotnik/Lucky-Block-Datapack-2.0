@@ -27,13 +27,17 @@ scoreboard players set @a ingame 1
 scoreboard players reset @a oldideffect
 scoreboard players reset @a Position
 
-execute as @a at @s run spawnpoint @s ~ ~ ~ 180
+execute as @a at @s run function lb:spawnpoint
 
 kill @e[name="SpawnPlayer", type=armor_stand]
 
 
 effect give @a instant_health 1 10 true
 
+gamerule keepInventory false
 
-# start timer for choosing a passive or not
-function lb:passive/get_passive
+# start timer for choosing a passive or not / ONLY if passive are enabled
+execute if score EnablePassive 1 matches 1 run function lb:passive/get_passive
+# else start timer for choosing a class
+execute if score EnablePassive 1 matches 0 run function lb:kits/timer/start
+

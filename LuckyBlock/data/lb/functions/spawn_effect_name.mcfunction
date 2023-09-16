@@ -1,3 +1,14 @@
+# if passive 2, replace the next effect with the same effect as the previous one
+execute as @p if score @p passif_game matches 2 unless entity @s[tag=2inRaw] run item replace entity @p enderchest.4 from block -8 -60 -4 container.0
+execute as @p if score @p passif_game matches 2 unless entity @s[tag=2inRaw] run tag @p add 2inRaw
+
+execute as @p if score @p passif_game matches 2 if entity @s[tag=2inRaw2] run item replace block -8 -60 -4 container.0 from entity @p enderchest.4
+execute as @p if score @p passif_game matches 2 if entity @s[tag=2inRaw2] run tag @p remove 2inRaw
+execute as @p if score @p passif_game matches 2 if entity @s[tag=2inRaw2] run tag @p remove 2inRaw2
+
+
+
+
 # compare from the first container of the shulker box where the effect is store
 title @p actionbar [{"text":"Effect : "},{"nbt":"Items[0].tag.display.Name","block":"-8 -60 -4","interpret":true}]
 
@@ -64,9 +75,11 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Shulker"}'}}}]} run function lb:effects/bad/shulker
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BCS"}'}}}]} run function lb:effects/good/bcs
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Ghost"}'}}}]} run function lb:effects/good/ghost
-execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Luck"}'}}}]} run function lb:effects/good/luck
-execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BadLuck"}'}}}]} run function lb:effects/bad/badluck
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Luck"}'}}}]} at @s run function lb:effects/good/luck
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BadLuck"}'}}}]} at @s run function lb:effects/bad/badluck
 
 scoreboard players operation @p oldideffect = @p ideffect
+
+execute as @p if score @p passif_game matches 2 if entity @s[tag=2inRaw] run tag @p add 2inRaw2
 
 kill @s
