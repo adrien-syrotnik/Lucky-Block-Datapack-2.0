@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": "Let's catch them all!",
+        "description": "Here you can find which villagers are missing in your collection.",
+        "background": "minecraft:textures/block/emerald_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "lucky block": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

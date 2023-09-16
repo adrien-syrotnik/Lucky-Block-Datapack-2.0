@@ -77,6 +77,10 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Ghost"}'}}}]} run function lb:effects/good/ghost
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Luck"}'}}}]} at @s run function lb:effects/good/luck
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"BadLuck"}'}}}]} at @s run function lb:effects/bad/badluck
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Gold ingot"}'}}}]} at @s run function lb:effects/good/gold_ingot
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Piglin"}'}}}]} at @s run function lb:effects/bad/piglin
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Villager"}'}}}]} at @s run function lb:effects/good/villager
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Smoke"}'}}}]} at @s run function lb:effects/good/smoke
 
 scoreboard players operation @p oldideffect = @p ideffect
 

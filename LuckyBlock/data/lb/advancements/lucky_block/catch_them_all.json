@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": "Catch them all!",
+        "description": "Catch all the villager professions!",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "lucky block": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

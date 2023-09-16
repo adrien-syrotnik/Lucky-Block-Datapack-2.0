@@ -36,3 +36,15 @@ execute as @a[scores={music_lol2=1..}] at @s run function lb:music2
 function lb:bossbar
 execute as @a[scores={bell=1..},gamemode=adventure] at @s run function lb:bell
 execute as @a[scores={bell=1..},gamemode=creative] at @s run scoreboard players set @s bell 0
+
+
+
+
+#armor stand spawn
+execute as @e[name="LuckyBlockSpawn"] at @s run tp @s ~ ~ ~ ~5 ~
+execute as @e[name="LuckyBlockSpawn"] at @s run particle minecraft:electric_spark ~ ~1 ~ 0.5 0.5 0.5 0 5 force
+
+execute positioned 5000 100 5000 run effect give @a[distance=..50] minecraft:regeneration 2 255 true
+execute positioned 5000 100 5000 run effect give @a[distance=..50] minecraft:resistance 2 255 true
+execute positioned 5000 100 5000 run tp @a[distance=35..50] 5000 100 5000
+execute positioned 5000 100 5000 run gamemode adventure @a[gamemode=survival,distance=..100]

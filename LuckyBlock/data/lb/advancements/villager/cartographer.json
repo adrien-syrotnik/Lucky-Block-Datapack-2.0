@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cartography_table"
+        },
+        "title": "Cartographer",
+        "description": "Get the Cartographer villager",
+        "background": "minecraft:textures/block/emerald_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "lb:villager/root",
+    "criteria": {
+        "villager": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

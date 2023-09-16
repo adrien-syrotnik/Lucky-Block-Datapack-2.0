@@ -1,0 +1,1 @@
+summon minecraft:piglin ~ ~1 ~ {IsImmuneToZombification:1b,Attributes:[{Name:generic.attack_knockback,Base:2}]}

@@ -947,6 +947,66 @@
                 "tag": "{id:63}"
               }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Gold ingot"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:64}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Piglin"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:65}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Villager"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:66}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Smoke"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:67}"
+              }
+            ]
           }
         ]
       }

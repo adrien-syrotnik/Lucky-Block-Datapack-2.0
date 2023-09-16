@@ -142,3 +142,5 @@ scoreboard players reset @a[scores={ghost_count=..0}] ghost_count
 #spawnpoint protection
 execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~ ~ air run setblock ~ ~ ~ air
 execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~1 ~ air run setblock ~ ~1 ~ air
+
+
