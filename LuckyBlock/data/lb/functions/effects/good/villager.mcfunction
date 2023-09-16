@@ -2,7 +2,7 @@ scoreboard players set max RANDOM 14
 function lb:rand
 
 
-summon villager ~ ~ ~ {VillagerData:{level:2}}
+summon villager ~ ~ ~ {VillagerData:{level:2},Offers:{Recipes:[{maxUses:1,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:egg",Count:1b,tag:{display:{Name:'{"text":"Gêne tes adversaires"}',Lore:['{"text":"Applique un effet de vitesse"}','{"text":"qui gêne tous tes adversaires"}']},Enchantments:[{}]}}},{maxUses:1,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:snowball",Count:1b,tag:{display:{Name:'{"text":"Ralentis tes adversaires"}',Lore:['{"text":"Applique un effet de ralentissement"}','{"text":"sur tous tes adversaires"}']},Enchantments:[{}]}}},{maxUses:1,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:ender_pearl",Count:1b,tag:{display:{Name:'{"text":"Tp de secours"}',Lore:['{"text":"Tp toi en l\'air et atterris en douceur"}']},Enchantments:[{}]}}},{maxUses:1,xp:0,priceMultiplier:0f,specialPrice:0,demand:0,buy:{id:"minecraft:emerald",Count:1b},sell:{id:"minecraft:red_bed",Count:1b,tag:{display:{Name:'{"text":"THE Red Bed","color":"red"}',Lore:['{"text":"Place meeee...."}']}}}}]}}
 
 execute if score @s RANDOM matches 0 run data modify entity @e[type=villager,limit=1,sort=nearest] VillagerData.profession set value "minecraft:armorer"
 execute if score @s RANDOM matches 1 run data modify entity @e[type=villager,limit=1,sort=nearest] VillagerData.profession set value "minecraft:butcher"
@@ -53,6 +53,5 @@ execute if score @s RANDOM matches 3 run data modify entity @e[type=villager,lim
 execute if score @s RANDOM matches 4 run data modify entity @e[type=villager,limit=1,sort=nearest] VillagerData.type set value "minecraft:snow"
 execute if score @s RANDOM matches 5 run data modify entity @e[type=villager,limit=1,sort=nearest] VillagerData.type set value "minecraft:swamp"
 execute if score @s RANDOM matches 6 run data modify entity @e[type=villager,limit=1,sort=nearest] VillagerData.type set value "minecraft:taiga"
-
 
 

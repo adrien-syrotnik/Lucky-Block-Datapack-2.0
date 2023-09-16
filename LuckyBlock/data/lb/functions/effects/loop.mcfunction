@@ -143,4 +143,26 @@ scoreboard players reset @a[scores={ghost_count=..0}] ghost_count
 execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~ ~ air run setblock ~ ~ ~ air
 execute as @e[tag=spawnpoint,type=armor_stand] at @s unless block ~ ~1 ~ air run setblock ~ ~1 ~ air
 
+#nuke
+execute as @e[tag=nuke,scores={count=1..}] at @s run particle minecraft:squid_ink ~ ~ ~ 2 1 2 0 300 force @a
+# execute as @e[tag=nuke,scores={count=1..}] at @s run particle minecraft:flame ~ ~ ~ 1.5 0.5 1.5 0.1 100 force @a
+execute as @e[tag=nuke,scores={count=1..}] at @s run tp @s ~ ~-2 ~
+execute as @e[tag=nuke,scores={count=..0}] at @s run function lb:effects/nuke_explosion
+kill @e[tag=nuke,scores={count=..0}]
+
+execute as @e[tag=nuke_explosion] at @s run tp @s ^ ^ ^1 ~ ~
+execute as @e[tag=nuke_explosion] at @s run summon creeper ~ ~0.5 ~ {ExplosionRadius:4b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"Nuke","color":"red","bold":true}'}
+execute as @e[tag=nuke_explosion] at @s run summon creeper ~0.5 ~ ~0.5 {ExplosionRadius:4b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"Nuke","color":"red","bold":true}'}
+execute as @e[tag=nuke_explosion] at @s run summon creeper ~-0.5 ~ ~-0.5 {ExplosionRadius:4b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"Nuke","color":"red","bold":true}'}
+# execute as @e[tag=nuke_explosion] at @s run particle campfire_signal_smoke ~ ~ ~ 1.5 1.5 1.5 0 50 force @a
+
+
+kill @e[tag=nuke_explosion,scores={count=..0}]
+
+execute as @a[scores={effect_curse_heal=1}] at @s run function lb:effects/health/damage
+execute as @a[scores={effect_curse_heal=3,count=0}] at @s run tellraw @s ["",{"text":"[Curse - Health] ","color":"black"},{"text":"Curse is finished.","color":"gold"}]
+effect give @a[scores={effect_curse_heal=3,count=0}] minecraft:regeneration 60 0 true 
+effect give @a[scores={effect_curse_heal=3,count=0,kit=9}] minecraft:regeneration 30 1 true 
+execute as @a[scores={effect_curse_heal=3,count=0}] at @s run scoreboard players set @s effect_curse_heal 0
+
 

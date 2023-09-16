@@ -81,6 +81,9 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Piglin"}'}}}]} at @s run function lb:effects/bad/piglin
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Villager"}'}}}]} at @s run function lb:effects/good/villager
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Smoke"}'}}}]} at @s run function lb:effects/good/smoke
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Pyramid Chest"}'}}}]} at @s run function lb:effects/good/pyramid_chest
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Curse of Health"}'}}}]} at @s run function lb:effects/bad/health_curse
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Nuke"}'}}}]} at @s run function lb:effects/bad/nuke
 
 scoreboard players operation @p oldideffect = @p ideffect
 
