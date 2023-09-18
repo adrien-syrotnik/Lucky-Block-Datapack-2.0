@@ -4,7 +4,7 @@ scoreboard players remove @a[scores={ghost_count=1..}] ghost_count 1
 kill @e[type=skeleton,scores={count=0}]
 kill @e[type=shulker,scores={count=0}]
 
-execute as @e[type=turtle,scores={count=0}] at @s run summon creeper ~ ~ ~ {ExplosionRadius:8b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"I AM the Danger!","color":"dark_green","bold":true}'}
+execute as @e[type=turtle,scores={count=0}] at @s run summon creeper ~ ~ ~ {ExplosionRadius:10b,Fuse:0,ignited:1b,Invulnerable:1b,CustomName:'{"text":"I AM the Danger!","color":"dark_green","bold":true}',Tags:["turtle_explosion"]}
 execute as @e[type=turtle,scores={count=0}] run kill @s
 
 execute as @e[name=WaterDis,scores={count=1},type=armor_stand] at @s run fill ~-2 ~5 ~-6 ~2 ~-5 ~6 air replace water
@@ -166,3 +166,39 @@ effect give @a[scores={effect_curse_heal=3,count=0,kit=9}] minecraft:regeneratio
 execute as @a[scores={effect_curse_heal=3,count=0}] at @s run scoreboard players set @s effect_curse_heal 0
 
 
+# dragon
+execute as @e[tag=dragon,scores={count=1..},type=ender_dragon] at @s run tp @s @e[tag=dragon,type=armor_stand,limit=1,sort=nearest]
+
+kill @e[tag=dragon,scores={count=..0}]
+
+#SquidRocket
+execute as @e[tag=SquidRocket,scores={count=201..250}] at @s run tp @s ~ ~0.05 ~
+execute as @e[tag=SquidRocket,scores={count=201..250}] at @s run particle minecraft:squid_ink ~ ~-0.5 ~1 0.2 0.2 0.2 0 1 force @a
+execute as @e[tag=SquidRocket,scores={count=249}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.1
+execute as @e[tag=SquidRocket,scores={count=245}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.2 0.2
+execute as @e[tag=SquidRocket,scores={count=240}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.3 0.3
+execute as @e[tag=SquidRocket,scores={count=235}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.4 0.4
+execute as @e[tag=SquidRocket,scores={count=230}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.5 0.5
+execute as @e[tag=SquidRocket,scores={count=225}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.6 0.6
+execute as @e[tag=SquidRocket,scores={count=220}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.7 0.7
+execute as @e[tag=SquidRocket,scores={count=215}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.8 0.8
+execute as @e[tag=SquidRocket,scores={count=210}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.9 0.9
+execute as @e[tag=SquidRocket,scores={count=205}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 1 1
+
+execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run tp @s ^ ^ ^1
+execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run particle minecraft:squid_ink ~ ~ ~1.5 0.3 0.3 0.3 0 50 force @a
+# execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 1 2
+execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run playsound minecraft:entity.player.splash.high_speed ambient @a ~ ~ ~ 1 2
+
+execute as @e[tag=SquidRocket,scores={count=1..200}] store result score @s 1 at @s run fill ~-1 ~-5 ~ ~1 ~10 ~ air replace yellow_stained_glass
+execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 1 matches 1 at @s run playsound block.glass.break master @a ~ ~ ~ 1 1
+execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 1 matches 1 run scoreboard players add @s 3 1
+
+#if 3 kill it
+execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 3 matches 3 run kill @s
+
+execute as @e[tag=SquidRocket,scores={count=1..}] at @s at @a if score @s currentplayer = @p currentplayer run ride @p mount @s
+kill @e[tag=SquidRocket,scores={count=..100}]
+
+#yamete advancement
+execute as @e[tag=SquidRocket,scores={count=..200}] at @s at @e[name="NextStage",type=armor_stand,scores={level=4}] if score @s currentplayer = @e[name="NextStage",type=armor_stand,scores={level=4},limit=1,sort=nearest] currentplayer positioned ~ ~ ~-10 at @a[distance=..5] if score @p currentplayer = @s currentplayer run advancement grant @p only lb:lucky_block/yamete_kudasai

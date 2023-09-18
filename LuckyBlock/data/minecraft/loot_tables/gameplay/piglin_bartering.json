@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:barter",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Tp de secours\"}',Lore:['{\"text\":\"Tp toi en l\\'air et atterris en douceur\"}']},Enchantments:[{}]}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/piglin_bartering"
+}

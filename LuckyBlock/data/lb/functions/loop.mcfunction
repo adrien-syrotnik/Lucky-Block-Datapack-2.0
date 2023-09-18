@@ -48,3 +48,8 @@ execute positioned 5000 100 5000 run effect give @a[distance=..50] minecraft:reg
 execute positioned 5000 100 5000 run effect give @a[distance=..50] minecraft:resistance 2 255 true
 execute positioned 5000 100 5000 run tp @a[distance=35..50] 5000 100 5000
 execute positioned 5000 100 5000 run gamemode adventure @a[gamemode=survival,distance=..100]
+
+
+
+execute as @a[scores={stop_music=1,count=0}] at @s run function lb:effects/bad/mlg_stop
+execute as @a[scores={stop_music=1,water=1..}] at @s run function lb:effects/bad/mlg_stop

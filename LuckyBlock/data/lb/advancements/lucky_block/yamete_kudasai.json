@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:twisting_vines"
+        },
+        "title": "Yamete Kudasai",
+        "description": "Noooo! The Squid Rocket doesn't allow me to finish the game :(",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "lucky block": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

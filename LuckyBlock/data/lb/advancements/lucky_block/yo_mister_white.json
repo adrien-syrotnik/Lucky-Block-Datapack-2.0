@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;651157702,-1447343729,-1421292324,230073877],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjE5NmZkYzhmZDg1NWUzNmY1YmFiODM2ODY3ZWYwZDQ0ZmJjMWNkNTYyMjE5YmRmZDA4YTEzMTc4ZTFkYTViIn19fQ==\"}]}}}"
+        },
+        "title": "Yo Mister White d:o",
+        "description": "Get killed by Mister White",
+        "background": "minecraft:textures/block/gold_block.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "lb:lucky_block/lucky_block",
+    "criteria": {
+        "killed_by_mw": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": [],
+                "killing_blow": {
+                    "source_entity": {
+                        "type": "minecraft:creeper",
+                        "nbt": "{Tags:[\"turtle_explosion\"]}"
+                    }
+                }
+            }
+        }
+    }
+}
