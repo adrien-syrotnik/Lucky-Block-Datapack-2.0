@@ -9,8 +9,6 @@ tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","co
 
 execute as @a[scores={finish=1..}] unless score @s currentplayer = @p currentplayer run scoreboard players add @p finish 1
 
-execute if entity @s[tag=death_reset_abandon] run say HAS TAG DEATH_RESET_ABANDON
-
 scoreboard players set @s ingame 0
 
 execute if score @s finish = @e[name="GameManager",type=armor_stand,limit=1] nbplayers run function lb:finish_game
