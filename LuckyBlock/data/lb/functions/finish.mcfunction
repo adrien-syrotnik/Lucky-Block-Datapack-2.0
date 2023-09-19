@@ -18,7 +18,8 @@ scoreboard players set @s ingame 0
 
 #afficher le temps du joueur
 function lb:scores/calculatetime
-tellraw @a ["",{"text":"\n"},{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" has reach the finish line in ","color":"gold"},{"score":{"name":"@s","objective":"minutes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"secondes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"centieme"},"color":"gold"}]
+function lb:scores/calculate_ratio
+tellraw @a ["",{"text":"\n"},{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" has reach the finish line in ","color":"gold"},{"score":{"name":"@s","objective":"minutes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"secondes"},"color":"gold"},{"text":":","color":"gold"},{"score":{"name":"@s","objective":"centieme"},"color":"gold"},{"text":" with a luck ratio of ","color":"gold"},{"score":{"name":"@s","objective":"ratioLuck"},"color":"gold","hoverEvent": {"action": "show_text", "value": {"text": "Luck ratio = (number of 'Lucky' lucky blocks broken) / (total number of lucky blocks broken)","italic": true,"color": "gold"}}},{"text":"%","color":"gold"},{"text":" !","color":"gold"}]
 
 #old execute if score level0weight maxweightstage = 10 number if score level1weight maxweightstage = 10 number if score level2weight maxweightstage = 10 number if score level3weight maxweightstage = 10 number if score @s timerun < 2400 number run advancement grant @s only lb:lucky_block/fast
 execute if score level0weight maxweightstage = 5 number if score level1weight maxweightstage = 5 number if score level2weight maxweightstage = 5 number if score level3weight maxweightstage = 5 number if score @s timerun < 1200 number run advancement grant @s only lb:lucky_block/fast
