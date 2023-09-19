@@ -1,2 +1,4 @@
 summon bat ~ ~ ~ {PersistenceRequired:1b,Passengers:[{id:"minecraft:skeleton",Glowing:1b,PersistenceRequired:1b,HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:2s}]}},{}],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:0}}},{id:"minecraft:dragon_head",Count:1b}]}]}
 scoreboard players set @e[type=skeleton, sort=nearest, limit=1] count 200
+
+scoreboard players add @p[scores={ingame=1},gamemode=survival] lbunluck 1

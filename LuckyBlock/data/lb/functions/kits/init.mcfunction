@@ -22,4 +22,4 @@ execute as @a at @s run item replace entity @e[type=armor_stand,tag=EnderItems,l
 item replace entity @a enderchest.22 with minecraft:player_head{display:{Name:"{\"text\":\"Random\"}"},SkullOwner:"I_mundercover"} 1
 
 # tp the armorstand 3 block under the player
-execute as @e[type=armor_stand,tag=EnderItems] at @s run tp @s ~ ~-10 ~
+execute as @e[type=armor_stand,tag=EnderItems] at @s run tp @s ~ ~-4 ~

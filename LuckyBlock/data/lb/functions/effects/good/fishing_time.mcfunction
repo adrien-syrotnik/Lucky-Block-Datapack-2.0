@@ -44,4 +44,6 @@ summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 summon minecraft:tropical_fish ~ ~ ~
 
-execute if score @p oldideffect matches 17 run advancement grant @p only lb:lucky_block/fish_water
+execute if score @p[scores={ingame=1},gamemode=survival] oldideffect matches 17 run advancement grant @p[scores={ingame=1},gamemode=survival] only lb:lucky_block/fish_water
+
+scoreboard players add @p[scores={ingame=1},gamemode=survival] lbluck 1

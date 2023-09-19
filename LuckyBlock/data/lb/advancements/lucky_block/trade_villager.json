@@ -1,10 +1,10 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:water_bucket"
+            "item": "minecraft:emerald"
         },
-        "title": "Fire Firemen!",
-        "description": "Get a water after a fire to extinguish the fire!",
+        "title": "A pleasure to do business w/u!",
+        "description": "Trade with a villager",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "task",
         "show_toast": true,
@@ -12,8 +12,9 @@
     },
     "parent": "lb:lucky_block/lucky_block",
     "criteria": {
-        "fish + water": {
-            "trigger": "minecraft:impossible"
+        "trade_pnj": {
+            "trigger": "minecraft:villager_trade",
+            "conditions": {}
         }
     }
 }

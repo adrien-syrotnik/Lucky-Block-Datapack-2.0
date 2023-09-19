@@ -109,3 +109,5 @@ item replace entity @s weapon.mainhand with minecraft:water_bucket 1
 playsound minecraft:music_disc.wait master @s ~ ~ ~ 20 2 1
 scoreboard players set @s count 80
 scoreboard players set @s stop_music 1
+
+scoreboard players add @s lbunluck 1

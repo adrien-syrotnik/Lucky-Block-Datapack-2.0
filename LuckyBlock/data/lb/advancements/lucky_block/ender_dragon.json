@@ -3,7 +3,7 @@
         "icon": {
             "item": "minecraft:dragon_head"
         },
-        "title": "Finish Minecraft like a pro",
+        "title": "Finish Minecraft like a Pro",
         "description": "Kill an Ender Dragon using a bed.",
         "background": "minecraft:textures/block/gold_block.png",
         "frame": "goal",

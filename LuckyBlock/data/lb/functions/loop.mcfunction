@@ -1,9 +1,10 @@
-execute if score ingame ingame matches 1 run function lb:best_distance
+ function lb:best_distance
 execute if score ingame ingame matches 1 run function lb:worst_distance
+execute if score ingame ingame matches 1 run function lb:levels/abandon
 
 function lb:spawn/armor_stand_animation
 
-function lb:levels/abandon
+
 function lb:kits/loop
 
 function lb:stage
@@ -11,8 +12,8 @@ function lb:spawnlb
 function lb:effects/spawnpotion
 function lb:advancement_jeb
 
-execute as @a[gamemode=survival] at @s if block ~ ~-1 ~ white_wool run function lb:finish
-execute as @a[gamemode=survival] at @s if block ~ ~-1 ~ black_wool run function lb:finish
+execute as @a[gamemode=survival] at @s if block ~ ~-1 ~ white_wool if entity @e[name="NextStage",type=armor_stand,scores={level=4},distance=..8] run function lb:finish
+execute as @a[gamemode=survival] at @s if block ~ ~-1 ~ black_wool if entity @e[name="NextStage",type=armor_stand,scores={level=4},distance=..8] run function lb:finish
 
 function lb:respawn
 
@@ -51,5 +52,5 @@ execute positioned 5000 100 5000 run gamemode adventure @a[gamemode=survival,dis
 
 
 
-execute as @a[scores={stop_music=1,count=0}] at @s run function lb:effects/bad/mlg_stop
-execute as @a[scores={stop_music=1,water=1..}] at @s run function lb:effects/bad/mlg_stop
+execute as @a[scores={stop_music=1,count=0}] at @s run function lb:effects/mlg_stop
+execute as @a[scores={stop_music=1,water=1..}] at @s run function lb:effects/mlg_stop

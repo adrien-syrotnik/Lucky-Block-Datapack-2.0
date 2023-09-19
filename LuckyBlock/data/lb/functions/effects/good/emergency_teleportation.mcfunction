@@ -1,1 +1,3 @@
-give @p ender_pearl{display:{Name:'{"text":"Tp de secours"}',Lore:['{"text":"Tp toi en l\'air et atterris en douceur"}']},Enchantments:[{}]} 1
+give @p[scores={ingame=1},gamemode=survival] ender_pearl{display:{Name:'{"text":"Emergency Tp"}',Lore:['{"text":"Tp you up in the air and land softly"}']},Enchantments:[{}]} 1
+
+scoreboard players add @p[scores={ingame=1},gamemode=survival] lbluck 1

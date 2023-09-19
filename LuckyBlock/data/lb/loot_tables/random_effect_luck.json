@@ -560,7 +560,7 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 1,
+            "weight": 0,
             "name": "minecraft:stone",
             "functions": [
               {

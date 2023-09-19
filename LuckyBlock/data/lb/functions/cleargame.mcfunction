@@ -7,6 +7,9 @@ execute as @e[name="NextStage",type=armor_stand] at @s run function lb:clearsolo
 kill @e[type=bat]
 clear @a[gamemode=!creative]
 
+tag @a remove 2inRaw2
+tag @a remove 2inRaw
+
 schedule clear lb:effects/malediction_degat
 scoreboard players reset @a mdegat
 scoreboard players reset @a oldideffect
@@ -14,6 +17,7 @@ scoreboard players reset @a oldideffect
 scoreboard players reset ingame ingame
 scoreboard players reset @a ingame
 scoreboard players reset @a abandon
+scoreboard players reset @a passif_game
 
 gamerule keepInventory false
 
@@ -38,4 +42,6 @@ kill @e[tag=spawnpoint,type=armor_stand]
 
 execute as @a at @s run schedule clear lb:kits/effects/tank_schedule
 
+execute as @s[scores={kit=3}] at @s run effect clear @s minecraft:resistance
 scoreboard players reset @a kit
+scoreboard players reset @a effect_curse_heal

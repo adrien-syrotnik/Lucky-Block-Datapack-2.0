@@ -17,7 +17,7 @@ execute as @s[scores={kit=9}] at @s run function lb:kits/effects/auspice
 execute as @s[scores={kit=10}] at @s run function lb:kits/effects/trompe_la_mort
 
 
+tag @s add death_reset_abandon
 
 
-execute as @s[scores={kit=3}] at @s run effect clear @s minecraft:resistance
 scoreboard players reset @s[scores={on_death=2..}] on_death

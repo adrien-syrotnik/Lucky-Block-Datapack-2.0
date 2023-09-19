@@ -1,9 +1,7 @@
-scoreboard players set max RANDOM 20
+scoreboard players set max RANDOM 10
 function lb:rand
 
-scoreboard players reset @a passif_game
-
-scoreboard players operation @a passif_game = @s RANDOM
+execute if score EnablePassive level matches -1 run scoreboard players operation @a passif_game = @s RANDOM
 
 
 # Passif 0 => keepinventory

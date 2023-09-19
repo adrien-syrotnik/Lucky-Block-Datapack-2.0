@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:emerald"
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-387021926,-757906717,-1594800417,641464849],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWRlYWU4MTc3NTZiY2EwZWFmZmVmODVjZThmYTBjYjFiZGI2MDliZWM0YjBmZTcxZTlmMzYzZDUxNjYwYzBlYSJ9fX0=\"}]}}}"
         },
         "title": "Catch them all!",
         "description": "Catch all the villager professions!",

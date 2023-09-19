@@ -1,2 +1,3 @@
 summon iron_golem ~ ~ ~ {CustomNameVisible:1b,AngerTime:2000000,CustomName:'{"text":">:("}',Attributes:[{Name:generic.max_health,Base:3}]}
-execute as @a run data merge entity @e[type=minecraft:iron_golem,limit=1] {AngerTime:10000}
+
+scoreboard players add @p[scores={ingame=1},gamemode=survival] lbunluck 1

@@ -11,7 +11,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Tp de secours\"}',Lore:['{\"text\":\"Tp toi en l\\'air et atterris en douceur\"}']},Enchantments:[{}]}"
+              "tag": "{display:{Name:'{\"text\":\"Emergency Tp\"}',Lore:['{\"text\":\"Tp you up in the air and land softly\"}']},Enchantments:[{}]}"
             }
           ]
         }

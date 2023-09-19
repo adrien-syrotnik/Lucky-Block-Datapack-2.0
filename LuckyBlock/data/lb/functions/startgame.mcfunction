@@ -37,7 +37,7 @@ effect give @a instant_health 1 10 true
 gamerule keepInventory false
 
 # start timer for choosing a passive or not / ONLY if passive are enabled
-execute if score EnablePassive 1 matches 1 run function lb:passive/get_passive
+execute unless score EnablePassive level matches -2 run function lb:passive/get_passive
 # else start timer for choosing a class
-execute if score EnablePassive 1 matches 0 run function lb:kits/timer/start
+execute if score EnablePassive level matches -2 run function lb:kits/timer/start
 

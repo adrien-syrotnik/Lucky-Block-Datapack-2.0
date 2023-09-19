@@ -26,13 +26,13 @@ scoreboard players reset @a[scores={book=20..}] book
 
 kill @e[type=snowball]
 execute as @a[scores={snowball=1..},gamemode=survival] at @s run effect give @a[distance=1..] minecraft:slowness 3 5 true
-execute as @a[scores={snowball=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Slowness effect to all players","color":"gold"}]
+execute as @a[scores={snowball=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" apply Slowness effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={snowball=1..}] snowball
 
 
 kill @e[type=egg]
 execute as @a[scores={egg=1..},gamemode=survival] at @s run effect give @a[distance=1..] minecraft:speed 1 80 true
-execute as @a[scores={egg=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" apply Speed effect to all players","color":"gold"}]
+execute as @a[scores={egg=1..}] run tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" apply Speed effect to all players","color":"gold"}]
 scoreboard players reset @a[scores={egg=1..}] egg
 
 #
@@ -48,10 +48,10 @@ scoreboard players reset @a[scores={enderpearl=1..}] enderpearl
 kill @e[type=ender_pearl]
 
 
-execute as @e[name=Meuhhhh,scores={count=1..},type=cow] at @s run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 1
-execute as @e[name=Meuhhhh,scores={count=1..},type=cow] at @s run damage @e[distance=..1,limit=1] 1000 mob_attack by @s
-execute as @e[name=Meuhhhh,scores={count=1..},type=cow] at @s run tp @s ~ ~ ~1
-kill @e[name=Meuhhhh,scores={count=0}]
+execute as @e[name=Mooooo,scores={count=1..},type=cow] at @s run playsound minecraft:block.bell.use master @a ~ ~ ~ 1 1
+execute as @e[name=Mooooo,scores={count=1..},type=cow] at @s run damage @e[distance=..1,limit=1] 1000 mob_attack by @s
+execute as @e[name=Mooooo,scores={count=1..},type=cow] at @s run tp @s ~ ~ ~1
+kill @e[name=Mooooo,scores={count=0}]
 
 
 execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=rabbit,tag=lock_obsi,distance=..1] at @p run summon creeper ~ ~ ~ {ExplosionRadius:1b,Fuse:0,ignited:1b}
@@ -79,7 +79,7 @@ execute at @e[tag=BlueShell,scores={count=1..}] as @a if score @s currentplayer 
 execute as @e[tag=BlueShell,scores={count=1..}] at @s run tp @s ^ ^ ^1
 
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] unless score BestDistance currentplayer = @p currentplayer run damage @p 3 cactus by @s
-execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:4b,CustomName:'{"text":"Carapace Bleue","color":"dark_blue","bold":true}',Invulnerable:1b}
+execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:4b,CustomName:'{"text":"Blue Shell","color":"dark_blue","bold":true}',Invulnerable:1b}
 #Detect if the player touched is near the end, for the success
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer as @e[name="NextStage",type=armor_stand,scores={level=4},distance=..10] if score @s currentplayer = @p currentplayer run advancement grant @p only lb:lucky_block/blue_shell_for_the_winner
 execute as @e[tag=BlueShell,scores={count=1..}] at @s at @a[distance=..2] if score BestDistance currentplayer = @p currentplayer run kill @s
@@ -88,7 +88,7 @@ kill @e[tag=BlueShell,scores={count=..1}]
 
 
 gamemode spectator @a[scores={kami=80}]
-execute as @a[scores={kami=60}] at @s run title @s subtitle {"text":"Fonce sur les gens !","color":"dark_red"}
+execute as @a[scores={kami=60}] at @s run title @s subtitle {"text":"Run at people!","color":"dark_red"}
 gamemode survival @a[scores={kami=1}]
 execute as @a[scores={kami=60}] at @s run title @s title {"text":"3"}
 execute as @a[scores={kami=60}] at @s run playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1
@@ -102,18 +102,18 @@ scoreboard players remove @a[scores={kami=1..}] kami 1
 
 execute as @a[scores={useBedRed=1..}] at @s run function lb:effects/bed/on_use_bed
 
-execute as @a[scores={music=1..}] at @s run function lb:effects/good/bcs_music
+execute as @e[scores={music=1..}] at @s run function lb:effects/bcs_music
 
-
+#set all golem angry
+execute as @e[type=iron_golem] run data merge entity @s {AngerTime:10000}
 
 #ghost
 #first part, look for a survival player arround the ghost
-execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @p[distance=..1.5,gamemode=survival,tag=!ghost_start] run scoreboard players operation @s haunted_by = @p[tag=ghost_start] currentplayer
-execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tellraw @a ["",{"text":"[Lucky Block] ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" has been haunted by ","color":"gold"},{"selector":"@p","color":"dark_red"}]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @p[distance=..1.5,gamemode=survival,tag=!ghost_start,scores={ingame=1}] run scoreboard players operation @s haunted_by = @p[tag=ghost_start] currentplayer
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" has been haunted by ","color":"gold"},{"selector":"@p[tag=ghost_start]","color":"dark_red"}]
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run title @s title {"text":"You are haunted !","color":"dark_red"}
-execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run title @s subtitle [{"selector":"@p[tag=ghost_start]","color":"dark_red"},{"text":" is haunted by ","color":"gold"},{"selector":"@s","color":"dark_red"}]
+execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run title @s subtitle [{"selector":"@s","color":"dark_red"},{"text":" is haunted by ","color":"gold"},{"selector":"@p[tag=ghost_start]","color":"dark_red"}]
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run playsound minecraft:entity.vex.charge ambient @a ~ ~ ~ 2 1 1
-execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run say @p[tag=ghost_start]
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run scoreboard players set @p[tag=ghost_start] ghost_count 60
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run scoreboard players set @s ghost_count 60
 execute as @a[tag=ghost_start,scores={ghost_count=1..}] at @s as @a[tag=!ghost_start] if score @s haunted_by = @p[tag=ghost_start] currentplayer run tag @p[tag=ghost_start] add ghost_haunted
@@ -160,6 +160,7 @@ execute as @e[tag=nuke_explosion] at @s run summon creeper ~-0.5 ~ ~-0.5 {Explos
 kill @e[tag=nuke_explosion,scores={count=..0}]
 
 execute as @a[scores={effect_curse_heal=1}] at @s run function lb:effects/health/damage
+execute as @a[scores={effect_curse_heal=2}] at @s run function lb:effects/health/damage2
 execute as @a[scores={effect_curse_heal=3,count=0}] at @s run tellraw @s ["",{"text":"[Curse - Health] ","color":"black"},{"text":"Curse is finished.","color":"gold"}]
 effect give @a[scores={effect_curse_heal=3,count=0}] minecraft:regeneration 60 0 true 
 effect give @a[scores={effect_curse_heal=3,count=0,kit=9}] minecraft:regeneration 30 1 true 
@@ -190,8 +191,9 @@ execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run particle minecraf
 # execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 1 2
 execute as @e[tag=SquidRocket,scores={count=1..200}] at @s run playsound minecraft:entity.player.splash.high_speed ambient @a ~ ~ ~ 1 2
 
-execute as @e[tag=SquidRocket,scores={count=1..200}] store result score @s 1 at @s run fill ~-1 ~-5 ~ ~1 ~10 ~ air replace yellow_stained_glass
+execute as @e[tag=SquidRocket,scores={count=1..200}] store result score @s 1 at @s run fill ~-1 ~-10 ~ ~1 ~10 ~ air replace yellow_stained_glass
 execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 1 matches 1 at @s run playsound block.glass.break master @a ~ ~ ~ 1 1
+execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 1 matches 1 at @s at @a if score @s currentplayer = @p currentplayer run scoreboard players add @p breakLB 1
 execute as @e[tag=SquidRocket,scores={count=1..200}] if score @s 1 matches 1 run scoreboard players add @s 3 1
 
 #if 3 kill it
@@ -201,4 +203,4 @@ execute as @e[tag=SquidRocket,scores={count=1..}] at @s at @a if score @s curren
 kill @e[tag=SquidRocket,scores={count=..100}]
 
 #yamete advancement
-execute as @e[tag=SquidRocket,scores={count=..200}] at @s at @e[name="NextStage",type=armor_stand,scores={level=4}] if score @s currentplayer = @e[name="NextStage",type=armor_stand,scores={level=4},limit=1,sort=nearest] currentplayer positioned ~ ~ ~-10 at @a[distance=..5] if score @p currentplayer = @s currentplayer run advancement grant @p only lb:lucky_block/yamete_kudasai
+execute as @e[tag=SquidRocket,scores={count=..200}] at @s at @e[name="NextStage",type=armor_stand,scores={level=4}] if score @s currentplayer = @e[name="NextStage",type=armor_stand,scores={level=4},limit=1,sort=nearest] currentplayer positioned ~ ~ ~-10 at @a[distance=..10] if score @p currentplayer = @s currentplayer run advancement grant @p only lb:lucky_block/yamete_kudasai
