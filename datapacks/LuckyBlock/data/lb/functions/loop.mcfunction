@@ -52,5 +52,6 @@ execute positioned 5000 100 5000 run gamemode adventure @a[gamemode=survival,dis
 
 
 
-execute as @a[scores={stop_music=1,count=0}] at @s run function lb:effects/mlg_stop
+execute as @a[scores={stop_music=1,count_mlg=0}] at @s run function lb:effects/mlg_stop
 execute as @a[scores={stop_music=1,water=1..}] at @s run function lb:effects/mlg_stop
+scoreboard players remove @a[scores={count_mlg=1..}] count_mlg 1
