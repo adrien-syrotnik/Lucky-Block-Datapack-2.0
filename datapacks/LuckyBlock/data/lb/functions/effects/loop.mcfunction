@@ -204,3 +204,9 @@ kill @e[tag=SquidRocket,scores={count=..100}]
 
 #yamete advancement
 execute as @e[tag=SquidRocket,scores={count=..200}] at @s at @e[name="NextStage",type=armor_stand,scores={level=4}] if score @s currentplayer = @e[name="NextStage",type=armor_stand,scores={level=4},limit=1,sort=nearest] currentplayer positioned ~ ~ ~-10 at @a[distance=..10] if score @p currentplayer = @s currentplayer run advancement grant @p only lb:lucky_block/yamete_kudasai
+
+#mines
+execute as @e[tag=mine] at @s if entity @p[distance=..0.75,gamemode=survival] run summon creeper ~ ~ ~ {Fuse:1,ignited:1,ExplosionRadius:1b,CustomName:'{"text":"Mine","color":"dark_red","bold":true}',Invulnerable:1b}
+execute as @e[tag=mine] at @s if entity @p[distance=..0.75,gamemode=survival] run kill @s
+
+execute as @e[tag=mine] at @s run tp @s ~ ~ ~ ~5 ~

@@ -12,8 +12,6 @@ execute as @p[tag=endkittimer] if score @e[name="GameManager",limit=1,type=armor
 execute as @a[scores={on_death=2..}] at @s run function lb:events/ondeath
 execute as @a[scores={on_death=1..}] at @s run scoreboard players set @s on_death 2
 
-execute as @a[scores={on_death=1..}] at @s run tag @s add death_reset_abandon
-
 
 
 execute as @a[scores={kit=3}] at @s run function lb:kits/effects/pretre

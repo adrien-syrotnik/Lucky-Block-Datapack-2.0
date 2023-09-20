@@ -87,6 +87,8 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Ender Dragon"}'}}}]} at @s run function lb:effects/bad/ender_dragon
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Squid Rocket"}'}}}]} at @s run function lb:effects/good/squid_rocket
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"MLG"}'}}}]} at @s as @p[gamemode=survival,scores={ingame=1},distance=..5] run function lb:effects/bad/mlg
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Door Wall"}'}}}]} at @s run function lb:effects/bad/door_wall
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Mines"}'}}}]} at @s run function lb:effects/bad/mines
 
 scoreboard players operation @p[gamemode=survival,scores={ingame=1}] oldideffect = @p[gamemode=survival,scores={ingame=1}] ideffect
 

@@ -1097,6 +1097,36 @@
                 "tag": "{id:73}"
               }
             ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Door Wall"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:74}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:stone",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": "Mines"
+              },
+              {
+                "function": "set_nbt",
+                "tag": "{id:75}"
+              }
+            ]
           }
         ]
       }
