@@ -16,6 +16,10 @@ fill ~-2 ~3 ~-1 ~2 ~4 ~-1 minecraft:birch_leaves destroy
 fill ~-1 ~-10 ~-2 ~-1 ~1 ~-2 minecraft:air destroy
 fill ~1 ~-10 ~-2 ~1 ~1 ~-2 minecraft:air destroy
 
+#add 2 reverse stairs to help jump
+setblock ~-1 ~2 ~-2 minecraft:birch_stairs[facing=south,half=top] destroy
+setblock ~1 ~2 ~-2 minecraft:birch_stairs[facing=south,half=top] destroy
+
 #set random, to put the true block on right or left, and the false block on the other side
 scoreboard players set max RANDOM 2
 function lb:rand

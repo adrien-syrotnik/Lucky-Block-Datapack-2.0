@@ -3,9 +3,9 @@ function lb:rand
 scoreboard players operation @s randomstage = @s RANDOM
 
 
-execute if score @s randomstage matches 0..4 run scoreboard players set @s weightstagetoadd 1
-execute if score @s randomstage matches 5..9 run scoreboard players set @s weightstagetoadd 2
-execute if score @s randomstage matches 10..15 run scoreboard players set @s weightstagetoadd 3
+execute if score @s randomstage matches 0..5 run scoreboard players set @s weightstagetoadd 1
+execute if score @s randomstage matches 6..11 run scoreboard players set @s weightstagetoadd 2
+execute if score @s randomstage matches 12..17 run scoreboard players set @s weightstagetoadd 3
 
 
 

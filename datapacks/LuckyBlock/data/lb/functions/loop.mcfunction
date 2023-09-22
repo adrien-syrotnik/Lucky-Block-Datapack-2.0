@@ -38,9 +38,6 @@ function lb:bossbar
 execute as @a[scores={bell=1..},gamemode=adventure] at @s run function lb:bell
 execute as @a[scores={bell=1..},gamemode=creative] at @s run scoreboard players set @s bell 0
 
-
-
-
 #armor stand spawn
 execute as @e[name="LuckyBlockSpawn"] at @s run tp @s ~ ~ ~ ~5 ~
 execute as @e[name="LuckyBlockSpawn"] at @s run particle minecraft:electric_spark ~ ~1 ~ 0.5 0.5 0.5 0 5 force
@@ -50,8 +47,10 @@ execute positioned 5000 100 5000 run effect give @a[distance=..50] minecraft:res
 execute positioned 5000 100 5000 run tp @a[distance=35..50] 5000 100 5000
 execute positioned 5000 100 5000 run gamemode adventure @a[gamemode=survival,distance=..100]
 
-
-
 execute as @a[scores={stop_music=1,count_mlg=0}] at @s run function lb:effects/mlg_stop
 execute as @a[scores={stop_music=1,water=1..}] at @s run function lb:effects/mlg_stop
 scoreboard players remove @a[scores={count_mlg=1..}] count_mlg 1
+
+
+#button tellraw
+execute unless score ingame ingame matches 1 run function lb:spawn/button

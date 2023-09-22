@@ -8,8 +8,10 @@ setblock 5011 100 5000 birch_wall_sign[facing=west]{front_text:{messages:['{"tex
 setblock 5011 99 5000 birch_wall_sign[facing=west]{front_text:{messages:['{"text":""}','{"text":"[-]","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"function lb:spawn/remove_weight"}}','{"text":""}','{"text":""}']}} destroy
 
 #configuration game -> enable passive games
+scoreboard players remove EnablePassive level 1
 function lb:spawn/refresh_passive_sign
 #change platform types
+scoreboard players remove PlatformType level 1
 function lb:spawn/refresh_platform_type
 
 # Start Game (Relaced by the bell)
