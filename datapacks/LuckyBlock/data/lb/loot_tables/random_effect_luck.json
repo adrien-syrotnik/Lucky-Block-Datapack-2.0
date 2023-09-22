@@ -940,7 +940,7 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": "Badluck"
+                "name": "BadLuck"
               },
               {
                 "function": "set_nbt",

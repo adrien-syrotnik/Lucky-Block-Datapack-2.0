@@ -54,7 +54,7 @@ execute as @e[name=Mooooo,scores={count=1..},type=cow] at @s run tp @s ~ ~ ~1
 kill @e[name=Mooooo,scores={count=0}]
 
 
-execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=rabbit,tag=lock_obsi,distance=..1] at @p run summon creeper ~ ~ ~ {ExplosionRadius:1b,Fuse:0,ignited:1b}
+execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=rabbit,tag=lock_obsi,distance=..1] at @p[distance=..5] run summon creeper ~ ~ ~ {ExplosionRadius:1b,Fuse:0,ignited:1b}
 execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=rabbit,tag=lock_obsi,distance=..1] run fill ~2 ~ ~-2 ~-2 ~2 ~-2 air replace stone
 execute as @e[type=armor_stand,tag=lock_obsi_inv] at @s unless entity @e[type=rabbit,tag=lock_obsi,distance=..1] run kill @s
 

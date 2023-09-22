@@ -86,3 +86,4 @@ scoreboard objectives add randomstage dummy
 scoreboard objectives add ingame dummy
 scoreboard objectives add weightstage dummy
 scoreboard objectives add bottle_thrown minecraft.used:minecraft.experience_bottle
+scoreboard objectives add count_mlg dummy
