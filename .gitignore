@@ -1,8 +1,8 @@
 session.lock
 spsSettings.json
-region
+# region
 
-stats/
+# stats/
 
 #all in the folder data
-./data/
+# ./data/
