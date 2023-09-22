@@ -1,6 +1,6 @@
-# Minecraft-SSB: Lucky Block 2.0 🎮
+# Lucky Block 2.0 - Minecraft Map 🎮 
 
-Welcome to the exciting world of "Lucky Block 2.0" - the ultimate mini game map for Minecraft 1.20.1! 🎉
+Welcome to the exciting world of "Lucky Block 2.0" - the ultimate mini game map for Minecraft 1.20.1, created by [Abyss](https://github.com/adrien-syrotnik) and [LordAythur](https://github.com/LordAythur)! 🎉
 
 ## Goal 🏆
 
