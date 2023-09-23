@@ -16,4 +16,7 @@ To use the "Lucky Block 2.0" map, simply download and install it on your Minecra
 
 To configure your server for "Lucky Block 2.0", make sure to set the game mode to "Survival", enable command blocks and enable fly. You can also adjust the difficulty level and other settings to your liking. 🛠️
 
+## In case of bugs ⚠️
+If somehow you get stuck, you can always use the `/function lb:cleargame` command to reset the game. 🔄
+
 So gather your friends and get ready for an adrenaline-fueled adventure in "Lucky Block 2.0". Who will be the lucky winner? Only time will tell!

@@ -9,6 +9,7 @@ clear @a[gamemode=!creative]
 
 tag @a remove 2inRaw2
 tag @a remove 2inRaw
+tag @a remove winner
 
 schedule clear lb:effects/malediction_degat
 scoreboard players reset @a mdegat

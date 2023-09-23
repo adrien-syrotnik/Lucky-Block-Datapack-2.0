@@ -6,6 +6,9 @@ execute at @a run playsound minecraft:entity.player.levelup master @p ~ ~ ~ 2 1 
 
 #tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"selector":"@s","color":"dark_red"},{"text":" a terminé la course !","color":"gold"}]
 
+#add tag winner if no one have it
+execute unless entity @a[tag=winner] run tag @s add winner
+
 execute as @a[scores={finish=1..}] unless score @s currentplayer = @p currentplayer run scoreboard players add @p finish 1
 
 # Add stats blocktravelled_stat to the player

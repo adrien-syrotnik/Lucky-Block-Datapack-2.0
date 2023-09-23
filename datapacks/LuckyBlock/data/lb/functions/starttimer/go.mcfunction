@@ -9,6 +9,7 @@ kill @e[tag=startwait]
 
 scoreboard players set @a timerun 0
 scoreboard players set ingame ingame 1
+tag @a remove winner
 bossbar set minecraft:timer visible true
 effect clear @a minecraft:resistance
 
