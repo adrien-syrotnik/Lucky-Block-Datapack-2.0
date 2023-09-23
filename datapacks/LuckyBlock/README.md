@@ -42,4 +42,6 @@ To configure your server for "Lucky Block 2.0", make sure to set the game mode t
 
 If somehow you get stuck, you can always use the `/function lb:cleargame` command to reset the game. 🔄
 
+The spawn of the map is at the coordinates `5000 100 5000`. If you get lost, you can always teleport to the spawn with the `/tp` command. 🌐
+
 So gather your friends and get ready for an adrenaline-fueled adventure in "Lucky Block 2.0". Who will be the lucky winner? Only time will tell!
