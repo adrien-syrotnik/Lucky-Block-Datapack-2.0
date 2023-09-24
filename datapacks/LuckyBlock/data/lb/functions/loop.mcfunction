@@ -22,6 +22,8 @@ function lb:effects/loop
 effect give @a minecraft:saturation 2 1 true
 
 execute if score ingame ingame matches 1 as @a if score @s ingame matches 1 run scoreboard players add @s timerun 1
+execute if score ingame ingame matches 1 as @a[gamemode=creative] run gamemode survival @s
+execute if score ingame ingame matches 1 as @a[gamemode=adventure] run gamemode survival @s
 
 execute as @a at @p run xp set @s 1 levels
 execute as @a at @p run xp set @s 0 points

@@ -12,8 +12,36 @@ But beware - not all the effects of the lucky blocks are good! Some may help you
 
 To use the "Lucky Block 2.0" map, simply download and install it on your Minecraft server. Then, invite your friends to join and start the game! 🎮
 
+## Game Information ℹ️
+
+### How to Play 🎮
+
+To start the game, simply right-click on the bell at the spawn. This will teleport you to the starting line. Multiple scenarios are available, but here is the normal one:
+
+- You will be teleported to the starting line.
+- You have a 1/2 chance to get a "passive" that will modify the current course.
+- Every player will need to choose a kit that will give them a special effect during the game.
+- After everyone has chosen their kit, the game will start.
+- You will need to break all the lucky blocks to finish the game.
+- Every time you break a lucky block, you will get a random effect and a platform will appear in front of you, gradually building the course.
+- The game is composed of different phases: 5 lucky blocks, 1 jump, 5 lucky blocks, respawn point, 5 lucky blocks, 2 jumps, 5 lucky blocks, and the finish line.
+
+### Game Options ⚙️
+
+From the spawn, you can configure the game with the following options:
+
+- **Passives**: You can choose to enable or disable the passives. And if you want to test a specific passive, you can also choose it.
+- **Number of Lucky Blocks**: You can choose the number of lucky blocks that will be generated during the game between each phase. The default is 5.
+- **Platform Type**: You can choose the type of platform that will be generated during the game. Two types of platforms are available: "hardened clay" and "wood". Also, a "mixed" option is available. The default is "mixed".
+
 ## Server Configuration ⚙️
 
-To configure your server for "Lucky Block 2.0", make sure to set the game mode to "Survival" and enable command blocks. You can also adjust the difficulty level and other settings to your liking. 🛠️
+To configure your server for "Lucky Block 2.0", make sure to set the game mode to "Survival", enable command blocks, and enable fly. You can also adjust the difficulty level and other settings to your liking. 🛠️
+
+## In Case of Bugs ⚠️
+
+If somehow you get stuck, you can always use the `/function lb:cleargame` command to reset the game. 🔄
+
+The spawn of the map is at the coordinates `5000 100 5000`. If you get lost, you can always teleport to the spawn with the `/tp` command. 🌐
 
 So gather your friends and get ready for an adrenaline-fueled adventure in "Lucky Block 2.0". Who will be the lucky winner? Only time will tell!
