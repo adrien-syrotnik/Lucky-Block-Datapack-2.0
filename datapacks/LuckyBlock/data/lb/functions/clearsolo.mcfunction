@@ -1,4 +1,4 @@
-fill ~-4 ~-6 ~-3 ~3 ~11 ~2 minecraft:air
+fill ~-4 ~-7 ~-3 ~3 ~11 ~2 minecraft:air
 kill @e[type=!player,distance=..20, name=!"NextStage"]
 tp @s ~ ~ ~5
 

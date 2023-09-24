@@ -11,6 +11,7 @@ scoreboard players set @a timerun 0
 scoreboard players set ingame ingame 1
 tag @a remove winner
 bossbar set minecraft:timer visible true
+bossbar set minecraft:timer players @a
 effect clear @a minecraft:resistance
 
 execute as @a[scores={kit=1}] at @s run function lb:kits/effects/ouvrier

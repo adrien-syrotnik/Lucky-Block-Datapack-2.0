@@ -27,7 +27,7 @@ execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Wither rain"}'}}}]} run function lb:effects/bad/wither_rain
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Pick me"}'}}}]} run function lb:effects/good/pick_me
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Thunderbolt"}'}}}]} run function lb:effects/bad/thunderbolt
-execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Back tp"}'}}}]} at @s as @p[gamemode=survival,scores={ingame=1}] run function lb:effects/bad/back_tp
+execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Back tp"}'}}}]} at @s as @p[gamemode=survival,scores={ingame=1},distance=..5] run function lb:effects/bad/back_tp
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Creeper ow man"}'}}}]} run function lb:effects/bad/creeper
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"I need healing"}'}}}]} run function lb:effects/good/healing
 execute if block -8 -60 -4 shulker_box{Items:[{Slot:0b,id:"minecraft:stone",tag:{display:{Name:'{"text":"Waterworld"}'}}}]} run function lb:effects/good/waterworld

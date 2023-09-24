@@ -12,6 +12,6 @@ execute if score @s RANDOM matches 0 run playsound minecraft:entity.player.level
 execute if score @s RANDOM matches 0 run tellraw @a ["",{"text":"[Lucky Block] ","color":"dark_red"},{"text":"Wow! ","color":"gold"},{"selector":"@s","color":"dark_red"},{"text":" found a ","color":"gold"},{"text":"Shiny Shulker","color":"#00AAFF","bold":true},{"text":" !","color":"gold"}]
 execute if score @s RANDOM matches 0 run advancement grant @s only lb:lucky_block/shiny_shulker
 
-scoreboard players set @e[tag=shulker_10hp,limit=1,sort=nearest] count 300
+scoreboard players set @e[tag=shulker_10hp,distance=..2,sort=nearest] count 300
 
 scoreboard players add @s lbunluck 1

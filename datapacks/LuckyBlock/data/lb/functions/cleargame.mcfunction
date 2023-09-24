@@ -18,7 +18,6 @@ scoreboard players reset @a oldideffect
 scoreboard players reset ingame ingame
 scoreboard players reset @a ingame
 scoreboard players reset @a abandon
-scoreboard players reset @a passif_game
 
 scoreboard players reset @a lbunluck
 scoreboard players reset @a lbluck

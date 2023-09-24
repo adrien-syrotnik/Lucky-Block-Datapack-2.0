@@ -5,8 +5,8 @@ scoreboard players set @s ghost_count 80
 playsound minecraft:entity.vex.ambient ambient @a ~ ~ ~ 1 1
 
 summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Marker:1b,NoGravity:1b,Tags:["ghost"]}
-execute as @e[tag=ghost,limit=1,sort=nearest] run scoreboard players operation @s currentplayer = @p[scores={ingame=1}] currentplayer
-tp @e[tag=ghost,limit=1,sort=nearest] @s
+execute as @e[tag=ghost,distance=..2] run scoreboard players operation @s currentplayer = @p[scores={ingame=1}] currentplayer
+tp @e[tag=ghost,distance=..2] @s
 
 # say to the player with title that he has 4 seconds to haunt a player
 title @s title {"text":"Ghost mode","color":"white"}
